@@ -23,12 +23,25 @@ header{
     border : none ; 
     padding : 5px ;
     margin-right: 5px ; 
-    transition: 1s ;
     cursor: grab;
 }
 
-.headerButton button:hover{
-    text-decoration: underline;
+.headerButton button::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: white ;
+    display: block;
+    transition: 0.7s ease-in-out ;
+    
+}
+
+.headerButton button:hover::after{
+    content: '';
+    height: 2px ;
+    width: 100%;
+    background-color: white ;
+    display: block;
 }
 
 #siteName{
