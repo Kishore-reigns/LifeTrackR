@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/pexels-abhinav-joshi-14850312.jpg");
+    background-size: cover;
+    overflow-y: hidden;
+}
+.navbar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: large;
+}
+.top_links{
+    text-decoration: none;
+    margin-left: 50px;
+    color: #fff;
+}
+.login_button{
+    font-size: large;
+    margin-left: 50px;
+    height: 40px;
+    width:130px;
+    background: none;
+    border: solid 2px #fff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, opacity 0.1s;
+}
+.login_button:hover{
+    background-color:white;
+    border-color: transparent;
+    color: rgba(72, 72, 72, 0.862);
+}
+.login_button:active{
+    opacity: 0.7;
+}
+.loginbox{
+    backdrop-filter: blur(20px);
+    border: solid 1px #fff;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 30px;
+    margin: auto;
+    margin-top: 110px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    margin-left: 10px;
+    border: none;
+}
+.inputbox{
+    border-bottom: solid 2px #fff;
+}
+#holder{
+    position: absolute;
+    left: 60px;
+    transform: translateY(28px);
+}
