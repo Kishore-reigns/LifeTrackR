@@ -1,6 +1,6 @@
 body{
     /* background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(51, 81, 99) 24.5%, rgb(51, 81, 99) 66%); */
-    background-image: url("../images/pexels-magda-ehlers-2114014.jpg");
+    background-image: url("pexels-magda-ehlers-2114014.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,6 +14,13 @@ header{
 }
 .headerButton{
     float: right ;
+}
+.logolight{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    float: left;
 }
 
 .headerButton button{

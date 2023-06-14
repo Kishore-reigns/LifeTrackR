@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../images/pexels-abhinav-joshi-14850312.jpg");
+    background-image: url("../images/BG\ for\ login\ _\ resized.jpg");
     background-size: cover;
     overflow-y: hidden;
 }
@@ -61,4 +61,19 @@ input{
     position: absolute;
     left: 60px;
     transform: translateY(28px);
+}
+.navbar a::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: white ;
+    transition: 0.5s ease-in-out ;
+    display: block;
+}
+
+.navbar a:hover::after{
+    content: '';
+    height: 2px ;
+    width: 100%;
+    background-color: white ;
 }
