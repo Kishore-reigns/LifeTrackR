@@ -1,0 +1,96 @@
+body{
+    /* background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(51, 81, 99) 24.5%, rgb(51, 81, 99) 66%); */
+    background-image: url("../images/pexels-magda-ehlers-2114014.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    height : 60px ;  
+}
+
+.headerLogoName{
+    float : left ; 
+}
+.headerButton{
+    float: right ;
+}
+
+.headerButton button{
+    position: relative;
+    top : 16px ; 
+    background-color: rgba(255, 255, 255, 0);
+    color : white ; 
+    font-family :Arial, Helvetica, sans-serif ;
+    font-size: larger;
+    border : none ; 
+    padding : 5px ;
+    margin-right: 5px ; 
+    cursor: grab;
+}
+
+.headerButton button::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: white ;
+    display: block;
+    transition: 0.7s ease-in-out ;
+    
+}
+
+.headerButton button:hover::after{
+    content: '';
+    height: 2px ;
+    width: 100%;
+    background-color: white ;
+    display: block;
+}
+
+#siteName{
+    color: white ;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+h2{
+    color: white ;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.Homecontainer{  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Fitness,.EMS,.Finance,.Timer,.Shop,.premium{
+    margin: auto;
+    margin-left: 20px ;
+    margin-top: 20px ;
+    padding : 3px ; 
+    width : 47%;
+    float :left ; 
+    transition: 1s;
+    background-color: rgba(255, 255, 255,0);
+    color : white ; 
+    border :none ; 
+    border-radius: 10%;
+    
+}
+
+.Fitness:hover,.EMS:hover,.Finance:hover,.Timer:hover,.Shop:hover,.premium:hover{
+    color : black ; 
+    /* background-color: rgba(255, 255, 255, 0.308); */
+    backdrop-filter: blur(20px);
+    box-shadow: black 5px 15px 20px ;
+    cursor: grab;
+}
+
+
+
+
