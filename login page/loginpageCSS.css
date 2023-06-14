@@ -4,18 +4,33 @@ body{
     background-size: cover;
     overflow-y: hidden;
 }
+.top_links{
+    text-decoration: none;
+    margin-left: 50px;
+    color: #fff;
+}
 .navbar{
     position: absolute;
     right: 20px;
     top: 20px;
     font-size: large;
 }
-.top_links{
-    text-decoration: none;
-    margin-left: 50px;
-    color: #fff;
+.navbar a::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: white ;
+    transition: 0.5s ease-in-out ;
 }
-.login_button{
+
+.navbar a:hover::after{
+    content: '';
+    height: 2px ;
+    width: 100%;
+    background-color: white ;
+}
+
+.login_button,.login_button_2{
     font-size: large;
     margin-left: 50px;
     height: 40px;
@@ -27,12 +42,12 @@ body{
     box-shadow: none;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, opacity 0.1s;
 }
-.login_button:hover{
+.login_button:hover,.login_button_2:hover{
     background-color:white;
     border-color: transparent;
     color: rgba(72, 72, 72, 0.862);
 }
-.login_button:active{
+.login_button:active,.login_button_2:active{
     opacity: 0.7;
 }
 .loginbox{
@@ -46,7 +61,14 @@ body{
     margin: auto;
     margin-top: 110px;
 }
-input{
+
+#holder{
+    position: absolute;
+    left: 60px;
+    transform: translateY(28px);
+}
+
+.input_text{
     background-color: transparent;
     border: none;
     padding: 20px;
@@ -54,26 +76,33 @@ input{
     margin-left: 10px;
     border: none;
 }
+.input_text:focus{
+    outline: none;
+}
 .inputbox{
+    margin-bottom: 20px;
     border-bottom: solid 2px #fff;
 }
-#holder{
+.input_text::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+ .input_text :-ms-.input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+  }
+  
+  .vertical_center {
+    margin: 0;
     position: absolute;
-    left: 60px;
-    transform: translateY(28px);
-}
-.navbar a::after{
-    content: '';
-    height: 2px ;
-    width: 0%;
-    background-color: white ;
-    transition: 0.5s ease-in-out ;
-    display: block;
-}
-
-.navbar a:hover::after{
-    content: '';
-    height: 2px ;
-    width: 100%;
-    background-color: white ;
-}
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .login_button_2{
+    margin: auto;
+    margin-left: 25px;
+    margin-top: 20px; 
+    height: 50px;
+    width: 300px;
+  }

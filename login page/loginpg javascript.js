@@ -1,3 +1,3 @@
-function move_up(){
-    document.getElementById("holder").style.cssText="transform: translateY(-5px);"
+function move_up(num){
+    document.getElementById("holder" +num).style.cssText="transform: translateY(-5px);"
 }

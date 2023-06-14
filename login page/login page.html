@@ -15,16 +15,34 @@
       <button class="login_button">Login</button>
     </nav>
     <div class="loginbox">
-      <h2 style="font-weight: 1000">Login</h2>
-      <div class="inputbox">
-        <input type="text" id="username" />
-        <label for="username" id="holder" onclick="move_up()"> Username </label>
-      </div>
-      <br />
-      <br />
-      <div class="inputbox">
-        <input type="password" id="password" />
-        <label for="password" id="holder" onclick="move_up()"> Password </label>
+      <h2 style="font-weight: 1000; text-align: center">Login</h2>
+      <div class="vertical_center">
+        <div class="inputbox">
+          <input
+            type="text"
+            id="username"
+            class="input_text"
+            placeholder="User Name"
+          />
+        </div>
+        <div class="inputbox">
+          <input
+            type="password"
+            class="input_text"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <label for="Remember">
+            <input type="checkbox" id="Remember" /> Remember Me
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button class="login_button_2">Login</button>
+        <p style="text-align: center">
+          Don't Have An Account? <a href="#">Register</a>
+        </p>
       </div>
     </div>
   </body>
