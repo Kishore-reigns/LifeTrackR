@@ -8,14 +8,16 @@
   </head>
   <body>
     <nav class="navbar">
-      <a class="top_links" href="#">Home</a>
-      <a class="top_links" href="#">About</a>
-      <a class="top_links" href="#">Services</a>
-      <a class="top_links" href="#">Contact</a>
-      <button class="login_button">Login</button>
+      <a class="top_links" style="margin-top: 8px" href="#"> About </a>
+      <a class="top_links" style="margin-top: 8px" href="#"> Services </a>
+      <a class="top_links" style="margin-top: 8px" href="#"> Contact </a>
+      <button class="login_button" onclick="disp_log()">Login</button>
     </nav>
-    <div class="loginbox">
+
+
+    <div id="loginbox" >
       <h2 style="font-weight: 1000; text-align: center">Login</h2>
+      <img src="images_login page/x button.png" onclick="gone('loginbox')" id="x_button">
       <div class="vertical_center">
         <div class="inputbox">
           <input
@@ -24,26 +26,73 @@
             class="input_text"
             placeholder="User Name"
           />
+          <img src="images_login page/user_icon.webp" class="lockicon" style="width: 33px; right: 38px;" alt="">
+
         </div>
         <div class="inputbox">
           <input
             type="password"
             class="input_text"
-            id="password"
+            id="pass1"
             placeholder="Password"
           />
+          <img src="images_login page/lock-icon-11.png" style="cursor: pointer;" onclick="toggle_password(1)" class="lockicon" alt="" />
         </div>
-        <div style="display: flex; justify-content: space-between">
+        <div
+          style="
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            transform: translateX(-14px);
+          "
+        >
           <label for="Remember">
             <input type="checkbox" id="Remember" /> Remember Me
           </label>
           <a href="#">Forgot password?</a>
         </div>
-        <button class="login_button_2">Login</button>
+        <a href="../home page/homeIndex.html"> <button class="login_button_2">Login</button> </a>
         <p style="text-align: center">
-          Don't Have An Account? <a href="#">Register</a>
+          Don't Have An Account? <a href="#" onclick="disp_reg()">Register</a>
         </p>
       </div>
+    </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="registerbox" >
+      <h2 style="font-weight: 1000; text-align: center">Register</h2>
+      <img src="images_login page/x button.png" onclick="gone('registerbox')" id="x_button">
+      <div class="vertical_center">
+        <div class="inputbox">
+          <input
+            type="email"
+            id="username"
+            class="input_text"
+            placeholder="E-mail ID"
+          /> 
+          <img src="images_login page/email.png" class="lockicon" style="height: 32px;width: 33px; right: 38px;" alt="">
+        </div>
+          <div class="inputbox">
+            <input
+              type="text"
+              id="username"
+              class="input_text"
+              placeholder="User Name"
+            />
+            <img src="images_login page/user_icon.webp" class="lockicon" style="width: 33px; right: 38px;" alt="">
+        </div>
+        <div class="inputbox">
+          <input
+            type="password"
+            class="input_text"
+            id="pass2"
+            placeholder="Password"
+          />
+          <img src="images_login page/lock-icon-11.png" style="cursor: pointer;" onclick="toggle_password(2)" class="lockicon" alt="" />
+        </div>
+        <a href="login page.html"> <button class="login_button_2">Register</button> </a>
+        <p style="text-align: center;transform: translateX(-19px);">
+           Have An Account Already? <a href="#" onclick="disp_log()">Login</a>
+        </p>
     </div>
   </body>
 </html>
