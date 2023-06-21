@@ -22,5 +22,6 @@ function toggle_password(n)
 }
 function gone(el)
 {
-    document.getElementById(el).style.display="none";
+    document.getElementById(el).setAttribute(id,"temp");
+    // document.getElementById(el).style.display="none";
 }
