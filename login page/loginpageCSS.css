@@ -158,22 +158,27 @@ body{
 @keyframes myAnimation{
     0%{
       opacity: 1;
-      transform: rotateX(90deg);
+    }
+    25%{
+      opacity: 0.75;
     }
     50%{
       opacity: 0.5;
-      transform: rotateX(0deg);
     }
+    75%{
+        opacity: 0.25;
+      }
     100%{
       display: none;
       opacity: 0;
-      transform: rotateX(90deg);
     }
   }
 
 
-#temp{
+.temp{
     animation-name: myAnimation;
-}
-
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

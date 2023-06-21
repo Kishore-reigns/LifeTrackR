@@ -22,6 +22,9 @@ function toggle_password(n)
 }
 function gone(el)
 {
-    document.getElementById(el).setAttribute(id,"temp");
-    // document.getElementById(el).style.display="none";
+    document.getElementById(el).classList.add("temp");
+    const stopanim=setTimeout(clearem(el),1500);
+}
+function stopanim(el){
+    document.getElementById(el).style.cssText="display:none;";
 }
