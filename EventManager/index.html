@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventManager</title>
     <link rel="stylesheet" href="eventManagerCss.css">
+    <script src = "evenManJs.js"></script>
 </head>
 <body>
     <header>
@@ -18,14 +19,27 @@
     </header>
 
     <div class="leftTabs">
+        <button class="save" name = "saveButton" value = "Save">Save Notes</button>
         <button class="starred" value = "starred">Starred</button>
         <button class="calender" value = "calender">Calender</button>
-        <button class="settings" value = "settings">Settings</button>
+        <button class="settings" id="settings" value = "settings" onclick="openSettings()">Settings</button>
+        <div class = "subSettings" id = "subSettings" value = "subSettings" >
+            <button class="theme" id = "theme" onclick = "openTheme()">Theme</button>
+            <div class="subtheme" id = "subtheme">
+                <button class="light" value = "light" id = "light" value = "1" onclick="lightDark()">Light</button>
+                <button class="dark" vlaue = "dark" id = "dark" value = "0" onclick="lightDark()">Dark</button>
+            </div>
+        </div>
+        <button class="starred" value = "starred">NONE</button>
     </div>
 
-    <div class="main">
-        <h2>Your notes</h2>
-        <button class="addNotes">+</button>
+    <div class="main" >
+        <div class = "headAndAdd" >
+            <h2 class = "yourNotes">Your notes</h2>
+            <button class="addNotesbutton" onclick="addNotes()">Add Notes</button>
+        </div>   
+        <div id = "notesDiv" >
+        </div>     
     </div>
     
 </body>
