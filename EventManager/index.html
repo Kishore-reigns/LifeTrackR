@@ -19,7 +19,10 @@
     </header>
 
     <div class="leftTabs">
-        <button class="save" name = "saveButton" value = "Save">Save Notes</button>
+        <button class="NotesMain" name = "NotesButton" value = "NotesButton" onclick = "openNotes()">Notes</button>
+        <button class="save" name = "saveButton" value = "Save">Save All Notes</button>
+        <button class="ToDOMain" name = "ToDOButton" value = "ToDoButton" onclick = "openToDo()">TO-DO</button>
+
         <button class="starred" value = "starred">Starred</button>
         <button class="calender" value = "calender">Calender</button>
         <button class="settings" id="settings" value = "settings" onclick="openSettings()">Settings</button>
@@ -33,12 +36,21 @@
         <button class="starred" value = "starred">NONE</button>
     </div>
 
-    <div class="main" >
+    <div class="main" id = "main">
         <div class = "headAndAdd" >
-            <h2 class = "yourNotes">Your notes</h2>
+            <h2 class = "yourNotes">Your Notes</h2>
             <button class="addNotesbutton" onclick="addNotes()">Add Notes</button>
         </div>   
         <div id = "notesDiv" >
+        </div>     
+    </div>
+
+    <div class="TodoMainBox" id = "TodoMainBox">
+        <div class = "headAndAdd" >
+            <h2 class = "yourNotes">Your Lists</h2>
+            <button class="addNotesbutton" onclick="addLists()">Add List</button>
+        </div>   
+        <div id = "ListDIv" >
         </div>     
     </div>
     

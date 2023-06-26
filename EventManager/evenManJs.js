@@ -1,5 +1,13 @@
-var notes = 0 ; 
+//notes
+var notes = 0 ;
+
+//to do 
+var todo = 0 ; 
+
+//settings
 var isSetOpen = 0 ; 
+
+//themes
 var isThemeOpen = 0 ; 
 var Light = 1 ; 
 
@@ -31,22 +39,32 @@ function addNotes(){
     title.style.backgroundColor = "rgb("+r+","+g+","+b+")";
     title.name = "form"+notes ;
 
-    //creating delete button 
+    // delete button 
     var del = document.createElement("button");
     del.setAttribute("class","deletebutton");
     del.setAttribute("name","form"+notes);
     del.innerHTML = "Delete";
 
+    del.addEventListener("click",function(event){
+        event.preventDefault();
+        return false ; 
+    })
 
-    //creating starred button
+
+    // starred button
     var star = document.createElement("button");
     star.setAttribute("class","starbutton");
     star.setAttribute("name","form"+notes);
     star.innerHTML = "Star Note";
   
+    
+    star.addEventListener("click",function(event){
+        event.preventDefault();
+        return false ; 
+    })
 
 
-    //appending everything to form 
+    //appending everything to form : THIS FORM CONTAINS INPUT , TEXTAREA , 2 BUTTONS - DELETE AND STAR 
     form.appendChild(title);
     form.appendChild(textarea);
     form.appendChild(del);
@@ -57,6 +75,58 @@ function addNotes(){
     return false ; 
 }
 
+// TO do LIST 
+
+function addLists(){
+    todo += 1 ; 
+
+    //creating form 
+    var form = document.createElement("form");
+    form.name = "todoform"+todo;
+    form.setAttribute("class","todoForm");
+
+    //creating add button
+    var add =  document.createElement("button");
+    add.setAttribute("class","todoadd");
+    add.innerHTML = "Add Task"
+
+    add.addEventListener("click",function(event){
+        event.preventDefault();
+        return false ; 
+    })
+
+    //creating delete button 
+    var star = document.createElement("button");
+    star.setAttribute("class","starbuttonTodo");
+    star.setAttribute("name","todo"+todo);
+    star.innerHTML = "Star List";
+  
+    
+    star.addEventListener("click",function(event){
+        event.preventDefault();
+        return false ; 
+    })
+
+    //cerating title 
+    var title = document.createElement("input");
+    title.setAttribute("type","text")
+    title.setAttribute("class","todoTitle");
+    title.setAttribute("placeholder","Title");
+
+    // appending to the form 
+    form.appendChild(title);
+    form.appendChild(add);
+    form.appendChild(star);
+
+    document.getElementById("ListDIv").appendChild(form);
+
+
+}
+
+
+// --------------------------------------
+// switches 
+// --------------------------------------
 function openSettings(){
     if(!isSetOpen){
         document.getElementById("subSettings").style.display = "block";
@@ -83,4 +153,12 @@ function lightDark(){
     if(light == 1){
 
     }
+}
+function openNotes(){
+    document.getElementById("main").style.display = "block" ; 
+    document.getElementById("TodoMainBox").style.display = "none" ;
+}
+function openToDo(){
+    document.getElementById("main").style.display = "none" ; 
+    document.getElementById("TodoMainBox").style.display = "block" ;
 }

@@ -91,13 +91,27 @@ header{
 .subSettings , .subtheme{
     display: none;
 }
-.main{
+/*
+////////////////////
+switches 
+///////////////////
+*/
+.main,.TodoMainBox{
     position: absolute;
     top : 80px ; 
     margin-left: 25% ;
     width: 80%;
     z-index: -1;
 }
+
+#TodoMainBox{
+    display: none ;
+}
+/*
+////////////////////
+NOTES AND TODO MIXED !!!!!!!!!!!!!!
+///////////////////
+*/
 .addNotes{
     width : 100px ; 
     height : 150px ; 
@@ -131,18 +145,17 @@ header{
 
 }
 
-.notesTitle{
+.notesTitle,.todoTitle{
     background-color: red;
     color : white ; 
     width : 90% ;
-   
     margin-bottom : 7px  ; 
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     font-weight: bolder;
 }
-.notesTitle::placeholder{
+.notesTitle::placeholder,.todoTitle::placeholder{
     color : white ;
 }
 
@@ -161,7 +174,7 @@ header{
     
 }
 
-.deletebutton{
+.deletebutton,.todoadd{
     width : 45% ;
     padding: 5px ;
     background-color: red;
@@ -170,13 +183,13 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     transition: 0.3s;
 }
-.deletebutton:hover{
+.deletebutton:hover,.todoadd:hover{
     
     padding: 6px ;
     background-color: rgb(185, 8, 8);
 
 }
-.starbutton{
+.starbutton,.starbuttonTodo{
     width : 45% ;
     padding: 5px ;
     background-color: rgb(185, 185, 7);
@@ -185,19 +198,49 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     transition: 0.3s;
 }
-.starbutton:hover{
+.starbutton:hover,.starbuttonTodo:hover{
     
     padding: 6px ;
     background-color: rgb(195, 195, 10);
 
 }
 form{
-   
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin: auto ;
     margin-bottom: 10px;
     width : 50% ; 
+}
+
+/*
+////////////////////
+TO DO 
+///////////////////
+*/
+
+.todoForm{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto ;
+    margin-bottom: 10px;
+    width : 80% ; 
+    border : 2px solid black ; 
+}
+
+.todoTitle{
+    width : 100% ;
+}
+.todoadd{
+    width : 50% ; 
+    background-color : green ;
+    color : white ;  
+}
+.todoadd:hover{
+    background-color : rgb(30, 180, 30) ;
+}
+.starbuttonTodo{
+    width: 50% ;
 }
 
