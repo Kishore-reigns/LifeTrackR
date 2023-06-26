@@ -6,16 +6,54 @@ var Light = 1 ;
 
 
 function addNotes(){
+    var r = Math.random() * 256;
+    var g = Math.random() * 256;   // to genereate random colors 
+    var b = Math.random() * 256;
+
     notes += 1 ; 
     console.log(notes);
+
+    // creating forms 
+    var form = document.createElement("form");
+    form.name = "form"+notes;
+    //creating textarea
     var textarea = document.createElement("textarea");
-    textarea.name = "notes" + notes;
-    textarea.id = "notes" + notes;
+    textarea.setAttribute("class","notesTextarea");
+    textarea.setAttribute("name","form" + notes );
+    textarea.id = "form"+notes;
     textarea.cols = 30;
     textarea.rows = 10;
-    var legend = document.createElement("legend");
-    legend.nodeValue = textarea.name ; 
-   document.getElementById("notesDiv").appendChild(textarea);
+    //creating title for textarea
+    var title = document.createElement("input");
+    title.setAttribute("type","text")
+    title.setAttribute("class","notesTitle");
+    title.setAttribute("placeholder","Title");
+    title.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    title.name = "form"+notes ;
+
+    //creating delete button 
+    var del = document.createElement("button");
+    del.setAttribute("class","deletebutton");
+    del.setAttribute("name","form"+notes);
+    del.innerHTML = "Delete";
+
+
+    //creating starred button
+    var star = document.createElement("button");
+    star.setAttribute("class","starbutton");
+    star.setAttribute("name","form"+notes);
+    star.innerHTML = "Star Note";
+  
+
+
+    //appending everything to form 
+    form.appendChild(title);
+    form.appendChild(textarea);
+    form.appendChild(del);
+    form.appendChild(star);
+    
+    //appending form to div block ; 
+    document.getElementById("notesDiv").appendChild(form);
     return false ; 
 }
 
@@ -42,7 +80,7 @@ function openTheme(){
 }
 
 function lightDark(){
-    if(document.getElementById("light")){
+    if(light == 1){
 
     }
 }
