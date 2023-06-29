@@ -3,9 +3,10 @@ function move_up(num){
 }
 function disp_reg(){
     document.getElementById("loginbox").style.cssText="display:none;";
-    document.getElementById("registerbox").style.cssText="display:block;";
+    document.getElementById("registerbox").style.cssText="display:block;height:600px;margin-top:50px";
 }
 function disp_log(){
+    document.getElementById("loginbox").style.cssText="height:420px";
     document.getElementById("loginbox").style.cssText="display:block;";
     document.getElementById("registerbox").style.cssText="display:none;";
 }
@@ -24,6 +25,7 @@ function gone(el)
 {
     document.getElementById(el).classList.add("temp");
     const stopanim=setTimeout(clearem(el),1500);
+    
 }
 function stopanim(el){
     document.getElementById(el).style.cssText="display:none;";

@@ -113,3 +113,8 @@ body{
     padding: 20px;
     margin: 0px;
   }
+  .gobacktohomeheadinglink{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
