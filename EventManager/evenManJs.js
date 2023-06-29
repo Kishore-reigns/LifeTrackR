@@ -92,6 +92,9 @@ function addLists(){
 
     add.addEventListener("click",function(event){
         event.preventDefault();
+        var ordlist = document.createElement("ol");
+        ordlist.setAttribute("class","ordList");
+        ordlist
         return false ; 
     })
 
@@ -112,6 +115,10 @@ function addLists(){
     title.setAttribute("type","text")
     title.setAttribute("class","todoTitle");
     title.setAttribute("placeholder","Title");
+    title.setAttribute("name","todo"+todo);
+
+    //creating ordered list .....
+    
 
     // appending to the form 
     form.appendChild(title);
@@ -124,9 +131,15 @@ function addLists(){
 }
 
 
+
+
 // --------------------------------------
 // switches 
 // --------------------------------------
+
+// calender
+
+
 function openSettings(){
     if(!isSetOpen){
         document.getElementById("subSettings").style.display = "block";
@@ -157,8 +170,16 @@ function lightDark(){
 function openNotes(){
     document.getElementById("main").style.display = "block" ; 
     document.getElementById("TodoMainBox").style.display = "none" ;
+    document.getElementById("calenderBox").style.display = "none" ;
 }
 function openToDo(){
     document.getElementById("main").style.display = "none" ; 
     document.getElementById("TodoMainBox").style.display = "block" ;
+    document.getElementById("calenderBox").style.display = "none" ;
+}
+function openCalender(){
+    document.getElementById("main").style.display = "none" ; 
+    document.getElementById("TodoMainBox").style.display = "none" ;
+    document.getElementById("calenderBox").style.display = "block" ;
+
 }
