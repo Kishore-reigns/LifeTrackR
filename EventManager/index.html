@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventManager</title>
-    <link rel="stylesheet" href="eventManagerCss.css">
+    <link id = "PageTheme" rel="stylesheet" href="eventManagerCss.css">
     <script src = "evenManJs.js"></script>
 </head>
 <body>
@@ -31,8 +31,8 @@
         <div class = "subSettings" id = "subSettings" value = "subSettings" >
             <button class="theme" id = "theme" onclick = "openTheme()">Theme</button>
             <div class="subtheme" id = "subtheme">
-                <button class="light" value = "light" id = "light" value = "1" onclick="lightDark()">Light</button>
-                <button class="dark" vlaue = "dark" id = "dark" value = "0" onclick="lightDark()">Dark</button>
+                <button class="light" value = "light" id = "light" value = "1" onclick="setTheme(0)">Light</button>
+                <button class="dark" vlaue = "dark" id = "dark" value = "0" onclick="setTheme(1)">Dark</button>
             </div>
         </div>
 
