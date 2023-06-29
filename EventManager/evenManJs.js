@@ -7,9 +7,9 @@ var todo = 0 ;
 //settings
 var isSetOpen = 0 ; 
 
-//themes
+//theme 
 var isThemeOpen = 0 ; 
-var Light = 1 ; 
+
 
 
 
@@ -84,24 +84,46 @@ function addLists(){
     var form = document.createElement("form");
     form.name = "todoform"+todo;
     form.setAttribute("class","todoForm");
+    form.setAttribute("id","form"+todo);
 
     //creating add button
     var add =  document.createElement("button");
     add.setAttribute("class","todoadd");
-    add.innerHTML = "Add Task"
+    add.setAttribute("id","add"+todo);
+    add.innerHTML = "Add Task";
 
     add.addEventListener("click",function(event){
         event.preventDefault();
-        var ordlist = document.createElement("ol");
-        ordlist.setAttribute("class","ordList");
-        ordlist
+
+        var addname = add.id ; 
+        var addnum = addname[addname.length-1] ;
+
+        console.log(addname);
+
+        var uordlist = document.createElement("ul");
+        uordlist.setAttribute("class","uordList");
+        uordlist.setAttribute("id","ul"+todo);
+
+        var li = document.createElement("li");
+        
+        var listvalue = document.createElement("input");
+        listvalue.setAttribute("type","text");
+        listvalue.setAttribute("placeholder","Enter task");
+        listvalue.setAttribute("class","listinputvalue");
+
+
+        li.appendChild(listvalue);
+        uordlist.appendChild(li);
+        document.getElementById("form"+addnum).appendChild(uordlist);
+
+
         return false ; 
     })
 
     //creating delete button 
     var star = document.createElement("button");
     star.setAttribute("class","starbuttonTodo");
-    star.setAttribute("name","todo"+todo);
+    star.setAttribute("id","star"+todo);
     star.innerHTML = "Star List";
   
     
@@ -115,7 +137,7 @@ function addLists(){
     title.setAttribute("type","text")
     title.setAttribute("class","todoTitle");
     title.setAttribute("placeholder","Title");
-    title.setAttribute("name","todo"+todo);
+    title.setAttribute("name","title"+todo);
 
     //creating ordered list .....
     
@@ -136,9 +158,6 @@ function addLists(){
 // --------------------------------------
 // switches 
 // --------------------------------------
-
-// calender
-
 
 function openSettings(){
     if(!isSetOpen){
@@ -182,4 +201,13 @@ function openCalender(){
     document.getElementById("TodoMainBox").style.display = "none" ;
     document.getElementById("calenderBox").style.display = "block" ;
 
+}
+
+////////////////
+//Themes 
+///////////////
+
+function setTheme(n){
+    var themes = ["eventManagerCss.css","eventManagerDark.css"]
+    document.getElementById("PageTheme").href = themes[n];
 }
