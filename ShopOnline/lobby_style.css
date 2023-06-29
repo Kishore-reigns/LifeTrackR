@@ -1,0 +1,115 @@
+body{
+  /* background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg"); */
+  /* background-image: url("images_shop/background.jpeg"); */
+  background-image: url("https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=");
+
+}
+.flexbox_container {
+    display: flex;
+    justify-content: center;
+  }
+  .c1,
+  .c3,
+  .c2,
+  .c4,.c5,.c6 {
+    background-color: rgba(240, 248, 255, 0.712);
+    height: 450px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+  }
+  .im {
+    margin-top: 20px;
+    height: 200px;
+    width: 310px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center;
+  }
+
+  .company_name {
+    margin: auto;
+    text-align: center;
+  }
+  .star_container {
+    display: flex;
+    justify-content: center;
+  }
+  .star {
+    height: 30px;
+    width: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .price {
+    text-align: center;
+  }
+  .price_symbol {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+  }
+  .price_whole {
+    font-size: 200%;
+  }
+  .og_price {
+    color: #565959;
+  }
+  .nike {
+    height: 36px;
+    width: 130px;
+    background-color: rgb(255, 216, 20);
+    border-radius: 30px;
+    border-width: 0px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .nike:hover {
+    background-color: rgb(208, 177, 22);
+  }
+  .nike:active {
+    opacity: 0.7;
+  }
+  .nike2 {
+    height: 36px;
+    width: 130px;
+    background-color: rgb(255, 141, 20);
+    border-radius: 30px;
+    border-width: 0px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.4s;
+  }
+  .nike2:hover {
+    background-color: rgb(212, 117, 15);
+  }
+  .nike2:active {
+    opacity: 0.84;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9px;
+  }
+  .cart {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .heading{
+    color: whitesmoke;
+    text-align: center;
+    font-family:  Garamond, serif;
+    font-weight: 10;
+    /* font-style: italic; */
+    font-size: 50px;
+    padding: 20px;
+    margin: 0px;
+  }
