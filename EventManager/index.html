@@ -20,11 +20,13 @@
 
     <div class="leftTabs">
         <button class="NotesMain" name = "NotesButton" value = "NotesButton" onclick = "openNotes()">Notes</button>
-        <button class="save" name = "saveButton" value = "Save">Save All Notes</button>
         <button class="ToDOMain" name = "ToDOButton" value = "ToDoButton" onclick = "openToDo()">TO-DO</button>
 
+        <button class="save" name = "saveButton" value = "Save">Save All</button>
+        
+
         <button class="starred" value = "starred">Starred</button>
-        <button class="calender" value = "calender">Calender</button>
+        <button class="calender" value = "calender" onclick="openCalender()">Calender</button>
         <button class="settings" id="settings" value = "settings" onclick="openSettings()">Settings</button>
         <div class = "subSettings" id = "subSettings" value = "subSettings" >
             <button class="theme" id = "theme" onclick = "openTheme()">Theme</button>
@@ -33,8 +35,11 @@
                 <button class="dark" vlaue = "dark" id = "dark" value = "0" onclick="lightDark()">Dark</button>
             </div>
         </div>
-        <button class="starred" value = "starred">NONE</button>
+
+        <button class="hub" value = "hub" onclick="window.location.href = '../home page/homeIndex.html'">Hub</button>
     </div>
+
+    <!-- Main : notes container-->
 
     <div class="main" id = "main">
         <div class = "headAndAdd" >
@@ -45,6 +50,8 @@
         </div>     
     </div>
 
+     <!-- todo list container-->
+
     <div class="TodoMainBox" id = "TodoMainBox">
         <div class = "headAndAdd" >
             <h2 class = "yourNotes">Your Lists</h2>
@@ -52,6 +59,16 @@
         </div>   
         <div id = "ListDIv" >
         </div>     
+    </div>
+
+      <!-- calender container-->
+
+      <div class="calenderBox" id = "calenderBox">
+        
+        <div class = "calenderContainer" id = "calenderContainer" >
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&src=OGE0NzEzMzU1YWFjMjM4YjViZGY2NDhlMTc3NGY2YjE2NmI0ZTc5Njg4YTA4NGZmODJmNjQzYmU1ODkzNzhlOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>   
+       
     </div>
     
 </body>
