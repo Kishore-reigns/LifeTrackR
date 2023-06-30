@@ -1,28 +1,90 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+// variables
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+// / display
+// window.onload = () => {
+//     document.getElementById('minutes').innerHTML = workTime;
+//     document.getElementById('seconds').innerHTML = seconds;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     workTittle.classList.add('active');
+// }
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+// start timer
+function start() {
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+ var workTime = document.timerform.mins.value;
+workTime = parseInt(workTime);
+
+
+
+let workTittle = document.getElementById('work');
+let breakTittle = document.getElementById('break');
+let breakTime = 0;
+
+
+// let seconds = "00";
+var seconds =  document.timerform.secs.value;
+seconds = parseInt(seconds);
+while(seconds>=60){
+  workTime += 1 ;
+  seconds -= 60 ; 
+}
+
+if(seconds == 0){
+  seconds = 59 ;
+  workTime -= 1 ; 
+}
+
+  console.log(workTime);
+    // change button
+    document.getElementById('start').style.display = "none";
+    document.getElementById('reset').style.display = "block";
+
+    // change the time
+    
+    console.log(seconds);
+
+    let workMinutes = workTime ;
+    let breakMinutes = breakTime - 1;
+
+    console.log(workMinutes);
+    breakCount = 0;
+
+    // countdown
+    let timerFunction = () => {
+        //change the display
+        document.getElementById('minutes').innerHTML = workMinutes;
+        document.getElementById('seconds').innerHTML = seconds;
+
+        // start
+        seconds = seconds - 1;
+
+        if(seconds === 0) {
+            workMinutes = workMinutes - 1;
+            if(workMinutes === -1 ){
+                if(breakCount % 2 === 0) {
+                    // start break
+                    workMinutes = breakMinutes;
+                    breakCount++
+
+                    // change the painel
+                    workTittle.classList.remove('active');
+                    breakTittle.classList.add('active');
+                }else {
+                    // continue work
+                    workMinutes = workTime;
+                    breakCount++
+
+                    // change the painel
+                    breakTittle.classList.remove('active');
+                    workTittle.classList.add('active');
+                }
+            }
+            seconds = 59;
+        }
+    }
+
+    // start countdown
+    setInterval(timerFunction, 1000); // 1000 = 1s
+}
