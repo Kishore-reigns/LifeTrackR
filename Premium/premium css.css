@@ -1,0 +1,115 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    height: 70px;
+    /* position: absolute; */
+    padding-left:60;
+    float: left;
+}
+.nav{
+    margin-top:0px;
+    background-color:#0c171d ;
+    height: 70px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+    width: 2000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.headerButton{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+.headerButton button{
+    position: relative;
+    top : 16px ; 
+    background-color: rgba(255, 255, 255, 0);
+    color : white ; 
+    font-family :Arial, Helvetica, sans-serif ;
+    font-size: larger;
+    border : none ; 
+    padding : 5px ;
+    margin-right: 5px ; 
+    cursor: grab;
+}
+
+.headerButton button::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: white ;
+    display: block;
+    transition: 0.7s ease-in-out ;
+    
+}
+
+.headerButton button:hover::after{
+    content: '';
+    height: 2px ;
+    width: 100%;
+    background-color: white ;
+    display: block;
+}
+/* ---------------------------------------------------------------------------- */
+.overimage,.premfeatures{
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
+}                           
+                          /* ------------------ */
+button.tweet {
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    color: rgb(255, 255, 255);
+    background-color: #0c171d;
+    border-width: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: box-shadow 0.5s,height 0.5s,width 0.5s;
+  }
+  button.tweet:hover {
+    height: 60px;
+    width: 160px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 00.15);
+  }
+  button.tweet:active {
+    opacity: 0.78;
+  }
+                          /* ------------------ */
+   
+.premfeatures{
+    background-color: wheat;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* -------------------------------------------------------------------------------- */
+.fl{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.child-left{
+    margin-right: 100px;
+    width: 500px;
+}
+.child-right{
+    margin-right: 100px;
+    width: 500px;
+}
+.icon{
+    height: 150px;
+    float: left;
+    border-radius: 1000px;
+}

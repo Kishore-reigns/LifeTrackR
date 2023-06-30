@@ -7,8 +7,11 @@
         text-align: center;
       }
       body {
-        background-color: #f5af9362;
+        /* background-color: #f5af9362; */
+        background-image: url("images_shop/black\ back2.jpg");
         overflow-x: hidden;
+        background-repeat: no-repeat;
+        background-size: fill;
       }
       .flex_container2 {
         display: flex;
@@ -22,7 +25,7 @@
       .c5,
       .c6 {
         width: 1000px;
-        background-color: aliceblue;
+        background-color: rgba(238, 209, 93, 0.773);
         height: 200px;
         margin: auto;
         margin-bottom: 10px;
@@ -98,10 +101,28 @@
         padding: 3px;
         background-color: white;
       }
+      .gobacktohomeheadinglink {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+      .heading {
+        color: whitesmoke;
+        text-align: center;
+        font-family: Garamond, serif;
+        font-weight: 10;
+        /* font-style: italic; */
+        font-size: 50px;
+        padding: 20px;
+        margin: 0px;
+      }
     </style>
   </head>
   <body>
-    <h1>Cart</h1>
+    <a href="../home page/homeIndex.html" class="gobacktohomeheadinglink">
+      <h1 class="heading">LifeTrackR Merchandise</h1></a
+    >
+    <h1 class="heading">Cart</h1>
     <div class="flex_container2">
       <div class="c1" id="child1">
         <img class="im" src="" id="img1" />
@@ -243,45 +264,45 @@
       temp;
     var toys = [
       {
-        name: "ROLEX",
-        price: "2,55,870",
-        ogprice: "₹3,05,870",
-        img: "https://content.rolex.com/v7/dam/collection/family-pages/classic-watches/oyster-perpetual/share/professional-watches-oyster-perpetual-share_m124300-0001_2210jva_001.jpg",
+        name: "Leather Bracelet",
+        price: "1,199",
+        ogprice: "₹1,499",
+        img: "images_shop/bracelet_2 resized.jpg",
       },
 
       {
-        name: "LOUIS VUITTON",
-        price: " 55,000",
-        ogprice: "₹70,000",
-        img: "https://cdn.shopify.com/s/files/1/0714/9627/products/CJC7SGCUK5S6HIEJ_1_large.jpg?v=1677668667",
+        name: "Fitness Watch",
+        price: " 3,999",
+        ogprice: "₹4,499",
+        img: "images_shop/watch.jpg",
       },
 
       {
         name: "NIKE",
         price: " 10,999",
         ogprice: "₹22,000 ",
-        img: "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9355f630-53c7-4567-89b4-a788c93171ea/air-zoom-gt-jump-basketball-shoes-22QS5F.png",
+        img: "images_shop/shoes.webp",
       },
 
       {
-        name: "GIVA",
+        name: "Arctic Fox",
         price: " 1,999",
         ogprice: "₹3,000",
-        img: "https://cdnmedia-breeze.vaibhavjewellers.com/media/catalog/product/image/13493c2cf/18kt-gold-playing-card-design-mens-ring-492va800-492va800.jpg",
+        img: "images_shop/backpack.jpg",
       },
 
       {
         name: "RAYBAN",
         price: " 7,999",
         ogprice: "₹10,000",
-        img: "https://eyesdeal.com/wp-content/uploads/RB-SG-4147-601-87-56-1-copy.jpg",
+        img: "images_shop/sunglasses.jpg",
       },
 
       {
-        name: "GUCCI",
-        price: " 19,999",
-        ogprice: "₹25,000",
-        img: "https://myluxurybargain.com/wp-content/uploads/2020/08/My-Luxury-bargainGucci-Black-Matelasse-Leather-Marmont-Crossbody-Bag-1-scaled.jpg",
+        name: "Water Bottle",
+        price: "1,099",
+        ogprice: "₹1,999",
+        img: "images_shop/bottle.jpg",
       },
     ];
     for (i; i < 6; i++) {
