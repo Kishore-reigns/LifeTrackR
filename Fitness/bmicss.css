@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("roadjpg.jpg");
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ;
+}
+
+.bmi{
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 10% ;
+    width : 400px ;
+    height :400px ; 
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 10% ;
+    border : 1px solid black ; 
+    
+}
+
+.username{
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.heightweight{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nextbutton,.submitbutton{
+    margin-top: 20px ;
+    background-color: black ;
+    color : white ; 
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10%;
+    width : 20% ;
+    height : 15% ; 
+    padding : 10px ; 
+    transition: 1s ;
+}
+
+.nextbutton:hover,.submitbutton:hover{
+ 
+    background-color: white ;
+    color : black ; 
+    padding : 15px ; 
+}
+
+input[type = "number"]{
+    border : none ; 
+    border-bottom: 2px solid black ;
+    padding : 5px ; 
+    transition: 1s;
+}
+
+input[type = "number"]:hover {
+    padding : 10px ; 
+    border : 2px solid black ; 
+   color : red ; 
+}
+
+.weight{
+    display : none ; 
+}
+
+.logo{
+    width: 100px;
+    height : 100px ; 
+    position: absolute;
+    top :0 ; 
+    left : 0 ; 
+}
+
+
