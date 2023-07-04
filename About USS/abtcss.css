@@ -1,0 +1,43 @@
+body{
+    background-color:#031A32;
+}
+.topim{
+    height: 700px;
+    width: 1400px;
+    object-fit: cover;
+}
+.abtus{
+    position: absolute;
+    top: 100px;
+    left: 570px;
+    font-size: 80px;
+    color: #031A32;
+}
+.para{
+    color: rgb(243,236,211);
+    font-size: 22px;
+    text-indent: 110px;
+}
+.logo{
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.climb{
+    height: 300px;
+    width: 550px;
+    float: left;
+}
+.fl{
+    display: flex;
+    justify-content: center;
+}
+.photo{
+    height: 300px;
+    width: 300px;
+    border-radius:200px ;
+}
+.para{
+    margin-right: 100px;
+}
