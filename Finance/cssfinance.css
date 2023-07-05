@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.left-menu{
+    background-color: #151515;
+    border-radius: 20px;
+    position: fixed;
+    width:240px ;
+    height: 98vh;
+    color: white;
+    padding: 10px;
+}
+.hello-user{
+    display: flex;
+    
+}
+.userimg{
+    height: 70px;
+    border-radius: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+}
+.verticalflex{
+    display: flex;
+    flex-direction:column;
+}
+.element{
+     background-color: #242424; 
+    margin-left: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 220px;
+    margin: auto;
+    padding-top: 30px ;
+    padding-bottom:  30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-width: 0px;
+    color: white;
+    transition: color 0.4s , background-color 0.4s;
+    margin-bottom: 10px;
+}
+.element:hover{
+    color: black;
+    background-color: white;
+}
+.headingtop{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+     background-color: #151515; 
+     color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 1200px;
+    margin-left:290px ;
+}
+.skeleton{
+    height: 70vh;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 290px;
+     background-color: #151515; 
+}
+.plus{
+    height: 25px;
+    width: 25px;
+    color: #2C63C1;
+    font-size: large;
+    background-color: #242424; 
+    border: none;
+    border-radius: 4px;
+    margin-left:10px ;
+    padding-top:3px ;
+    transition: background-color 0.15s ;
+}
+.plus:hover{
+    background-color: #242424c8;
+}
+.plus:active{
+    background-color: #353535c8;
+}
+.expense{
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #242424; 
+}
+.spend{
+    width: 150px;
+    color: #5388e3;
+    text-align: center;
+    vertical-align: ;
+}
