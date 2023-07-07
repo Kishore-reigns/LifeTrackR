@@ -85,16 +85,15 @@ video{
     color : white ; 
 }
 
-.lightWeight,.NoramlWeight,.OverWeight{
-    display : none ; 
-}
 
 p{
+   
     font-family: Helvetica, sans-serif;
     
 }
 
 h1{
+   
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xx-large;
     font-weight: bolder;
@@ -110,4 +109,10 @@ h1::before , h1::after{
     margin-top : 30px ; 
 }
 
+
+.lightWeight,.NoramlWeight,.OverWeight,.obese,
+.lightweightdiet,.NoramlWeightDiet,.obeseDiet,.overWeightDiet
+{
+    display : none ; 
+}
 

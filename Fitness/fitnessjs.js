@@ -1,4 +1,4 @@
-
+var det = [0,1,2,3];
 
 
 function movetoheight(){
@@ -25,19 +25,27 @@ function validateBmi(){
         console.log("error in taking value ");
     return false ;
     }
+    //underweight / lightweight
     if (bmi < 18.5){
-        description = "Underweight"
+        description = "Underweight";
+        document.getElementById("msgdesc").innerHTML = "Under Weight"; 
     }
+    //normal weight 
     else if (18.5 >= bmi && bmi < 25){
         description = "Normal weight";
+        document.getElementById("msgdesc").innerHTML = "Normal Weight"; 
     }
+    //overweight
     else if (25 >= bmi && bmi < 30){
         description = "Overweight";
+        document.getElementById("msgdesc").innerHTML = "Over Weight"; 
     }
+    //obese
     else{
         description = "Obese";
     }
     var res = "Your BMI : "+ bmi.toFixed(3) +"<br>"+ description ; 
+    document.getElementById("msgdesc").innerHTML = "Obese"; 
     console.log(res);
     return true ; 
 
