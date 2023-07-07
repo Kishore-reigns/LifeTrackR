@@ -34,10 +34,18 @@ body{
     justify-content: center;
 }
 .photo{
+    margin-left:28px ;
     height: 300px;
     width: 300px;
     border-radius:200px ;
 }
-.para{
+.par,.malar{
+    background-color: rgb(243, 236, 211);
+    padding:40px;
+    border-radius: 20px;
+    color: #031A32;
+    width: 350px;
+}
+.par{
     margin-right: 100px;
 }

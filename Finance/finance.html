@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+    <link rel="stylesheet" href="cssfinance.css" />
+    <script src="js_finance.js"></script>
+  </head>
+  <body>
+    <div class="left-menu">
+      <div class="hello-user">
+        <img src="images_finance/profile_pic.png" class="userimg" alt="" />
+        <h3 style="margin-top: 55px; margin-left: 20px">Hello , mf</h3>
+      </div>
+      <hr style="width: 220px; margin-top: 15px" />
+      <div class="verticalflex">
+        <button class="element" style="margin-top: 20px">Expenses</button>
+        <button class="element">Income</button>
+        <button class="element">Monthly Budget</button>
+        <button class="element">Graph</button>
+        <button class="element">Recommendations</button>
+      </div>
+    </div>
+    <div class="headingtop">
+      <h1>LifeTrackR Finance Tracker</h1>
+    </div>
+    <div class="skeleton">
+      <div style="padding-left: 20px; padding-top: 20px; font-size: larger">
+        <p style="display: inline">Expenses</p>
+        <button class="plus" onlclick="addexpense()">+</button>
+      </div>
+      <div class="expense">
+        <div class="spend">24</div>
+        <div>
+          <h2>Title</h2>
+          <p>date dd/mm/yy</p>
+          <p>Place</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
