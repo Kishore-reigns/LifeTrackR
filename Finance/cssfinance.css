@@ -93,5 +93,54 @@ body{
     width: 150px;
     color: #5388e3;
     text-align: center;
-    vertical-align: ;
 }
+.num{
+    font-size: 60px;
+    margin-top: 0px;
+}
+.popup{
+    position: fixed;
+    top: 200px;
+    z-index: 1;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 690px;
+    color: white;
+    background-color: #353535c8;
+    backdrop-filter: blur(20px);
+    width: 350px;
+    box-shadow: 5px 5px 10px rgb(32, 31, 31) ;
+}
+.inputbox{
+    margin: auto;
+    margin-bottom: 20px;
+    transform: translateX(-12px);
+    border-bottom: solid 2px #fff;
+}  
+
+.amount{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    width:350px;
+    height: 50px;
+    font-size: 40px;
+}
+.amount:focus{
+    outline: none;
+}
+
+.amount::placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.615);
+    font-weight: 500;
+    font-size: 25px;
+    opacity: 1; /* Firefox */
+  }
+  
+ .amount :-ms-.input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.678);
+    font-weight: 500;
+    font-size: 25px;
+  }
