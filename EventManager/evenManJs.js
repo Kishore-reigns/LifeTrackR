@@ -98,7 +98,7 @@ function addLists(){
         var addname = add.id ; 
         var addnum = addname[addname.length-1] ;
 
-        console.log(addname);
+        console.log(addname + " " + addnum );
 
         var uordlist = document.createElement("ul");
         uordlist.setAttribute("class","uordList");

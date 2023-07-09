@@ -109,9 +109,51 @@ h1::before , h1::after{
     margin-top : 30px ; 
 }
 
+table,th,tr{
+    border : 2px solid black ; 
+    border-collapse: collapse;
+    padding : 10px ; 
+    margin : auto ;  
+}
 
-.lightWeight,.NoramlWeight,.OverWeight,.obese,
-.lightweightdiet,.NoramlWeightDiet,.obeseDiet,.overWeightDiet
+.tablebutton{
+    float : right ; 
+    margin-right: 120px ;
+    margin-top :10px ; 
+}
+
+.addptabledata,.subtabledata{
+    border : 1px solid black ; 
+    padding : 8px ;
+    transition: 1s;
+
+}
+
+.subtabledata{
+    background-color: rgb(18, 141, 193);
+    color : rgb(0, 0, 0)  ; 
+}
+
+.addptabledata{
+    background-color: chartreuse;
+}
+
+.addptabledata:hover{
+    background-color:  rgb(10, 186, 13);
+    padding : 9px ; 
+}
+
+.subtabledata:hover{
+    background-color:  rgb(7, 84, 116);
+    padding : 9px ; 
+}
+
+.result{
+    text-align: center;
+}
+
+
+.lightWeight,.OverWeight,.obese,.NoramlWeightDiet,.obeseDiet,.overWeightDiet,
 {
     display : none ; 
 }
