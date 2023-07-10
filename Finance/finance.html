@@ -27,7 +27,7 @@
     <div class="skeleton">
       <div style="padding-left: 20px; padding-top: 20px; font-size: larger">
         <p style="display: inline">Expenses</p>
-        <button class="plus" onlclick="addexpense()">+</button>
+        <button class="plus" onclick="openpopup()">+</button>
       </div>
       <div class="expense">
         <div class="spend">
@@ -41,7 +41,8 @@
         </div>
       </div>
     </div>
-    <form class="popup">
+    <!------------------------------------------------------------------------------->
+    <form id="popup">
       <h2 style="text-align: center">Add Expense</h2>
       <div class="inputbox">
         <input
@@ -82,6 +83,10 @@
           id=""
         />
       </div>
+      <input type="submit" class="submit-button" value="Add" />
     </form>
+    <!------------------------------------------------------------------------------->
+    <div id="blursheet"></div>
+    <!------------------------------------------------------------------------------->
   </body>
 </html>
