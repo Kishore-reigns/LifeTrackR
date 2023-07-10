@@ -24,10 +24,12 @@
     <div class="headingtop">
       <h1>LifeTrackR Finance Tracker</h1>
     </div>
-    <div class="skeleton">
+    <div id="skeleton">
       <div style="padding-left: 20px; padding-top: 20px; font-size: larger">
         <p style="display: inline">Expenses</p>
-        <button class="plus" onclick="openpopup()">+</button>
+        <button class="plus" onclick="openpopup();create_new_element();">
+          +
+        </button>
       </div>
       <div class="expense">
         <div class="spend">
@@ -83,7 +85,12 @@
           id=""
         />
       </div>
-      <input type="submit" class="submit-button" value="Add" />
+      <input
+        type="button"
+        onclick="closepopup()"
+        class="submit-button"
+        value="Add"
+      />
     </form>
     <!------------------------------------------------------------------------------->
     <div id="blursheet"></div>
