@@ -39,6 +39,7 @@ nav{
     background-color: white ;
     color : black ;
     width: 100% ;
+    z-index: 0;
 }
 
 .buttons{
@@ -130,8 +131,10 @@ table,th,tr{
 }
 
 .subtabledata{
+    margin-top: 8px ;
+    border-radius: 10px ;
     background-color: rgb(18, 141, 193);
-    color : rgb(0, 0, 0)  ; 
+    color : rgb(255, 255, 255)  ; 
 }
 
 .addptabledata{
@@ -152,8 +155,63 @@ table,th,tr{
     text-align: center;
 }
 
+.fitnessformdiv{
+    color : black ; 
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width : 50% ;
+    z-index: 2;
+    top :0% ;
+    left :25% ; 
+    top : 30% ;  
+}
 
-.lightWeight,.OverWeight,.obese,.NoramlWeightDiet,.obeseDiet,.overWeightDiet,
+form{
+    border-radius: 20px ;
+    background:  linear-gradient(45deg, greenyellow, dodgerblue);
+    z-index: 2;
+}
+
+#formdetails{
+  
+  width: 50%;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-top : 8px ; 
+  margin-bottom: 8px ;
+  color : black ;
+  background-color: white;
+ 
+
+  
+}
+
+#formdetails::placeholder{
+    color : black ;
+    
+}
+
+legend{
+    font-weight: bolder;
+    margin-top : 5px ; 
+    margin-bottom: 5px ;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder ;
+}
+
+
+.lightWeight,.OverWeight,.obese,.NoramlWeight,
+.NoramlWeightDiet,.obeseDiet,.overWeightDiet,.lightweightdiet,
+.progresstracker,.fitnessformdiv
 {
     display : none ; 
 }

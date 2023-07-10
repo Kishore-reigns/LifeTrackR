@@ -50,3 +50,31 @@ function validateBmi(){
     return true ; 
 
 }
+
+function gotoProgressTracker(){
+
+    document.getElementById("progresstracker").style.display = 'block';
+
+    document.getElementById("lightWeight").style.display = 'none';
+    document.getElementById("OverWeight").style.display = 'none';
+    document.getElementById("obese").style.display = 'none';
+    document.getElementById("NoramlWeight").style.display = 'none';
+
+    document.getElementById("NoramlWeightDiet").style.display = 'none';
+    document.getElementById("obeseDiet").style.display = 'none';
+    document.getElementById("overWeightDiet").style.display ='none';
+    document.getElementById("lightweightdiet").style.display = 'none';
+
+    return true ; 
+
+}
+
+function openform(){
+    document.getElementById("main").style.filter = "blur("+5+"px)";
+    document.getElementById("message").style.filter = "blur("+5+"px)";
+    document.getElementById("fitnessformdiv").style.display = 'block' ;
+   
+    document.getElementById("fitnessformdiv").style.filter = 'none';
+    
+
+}
