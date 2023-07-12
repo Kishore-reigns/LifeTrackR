@@ -2,6 +2,7 @@ body{
     background-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 .left-menu{
     background-color: #151515;
@@ -27,7 +28,7 @@ body{
     display: flex;
     flex-direction:column;
 }
-.element{
+#element{
      background-color: #242424; 
     margin-left: 10px;
     border-radius: 20px;
@@ -42,7 +43,7 @@ body{
     transition: color 0.4s , background-color 0.4s;
     margin-bottom: 10px;
 }
-.element:hover{
+#element:hover{
     color: black;
     background-color: white;
 }
@@ -56,7 +57,7 @@ body{
     width: 1200px;
     margin-left:290px ;
 }
-#skeleton{
+#skeleton_expense,#skeleton_income,#skeleton_recommendations{
     height: 70vh;
     padding: 30px;
     border-radius: 20px;
@@ -64,10 +65,12 @@ body{
     margin-left: 290px;
      background-color: #151515; 
 }
+#skeleton_income{
+    display: none;
+}
 .plus{
     height: 25px;
     width: 25px;
-    color: #2C63C1;
     font-size: large;
     background-color: #242424; 
     border: none;
@@ -89,10 +92,13 @@ body{
     margin-top: 20px;
     background-color: #242424; 
 }
-.spend{
+.spend,.receive{
     width: 150px;
     color: #5388e3;
     text-align: center;
+}
+.receive{
+    color: #89e156;
 }
 .num{
     font-size: 60px;

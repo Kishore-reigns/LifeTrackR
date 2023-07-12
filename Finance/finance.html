@@ -14,20 +14,35 @@
       </div>
       <hr style="width: 220px; margin-top: 15px" />
       <div class="verticalflex">
-        <button class="element" style="margin-top: 20px">Expenses</button>
-        <button class="element">Income</button>
-        <button class="element">Monthly Budget</button>
-        <button class="element">Graph</button>
-        <button class="element">Recommendations</button>
+        <button
+          id="element"
+          style="margin-top: 20px"
+          onclick="disp_div('skeleton_expense')"
+        >
+          Expenses
+        </button>
+        <button id="element" onclick="disp_div('skeleton_income')">
+          Income
+        </button>
+        <button id="element" onclick="disp_div('')">Monthly Budget</button>
+        <button id="element" onclick="disp_div('')">Graph</button>
+        <button id="element" onclick="disp_div('skeleton_recommendations')">
+          Recommendations
+        </button>
       </div>
     </div>
     <div class="headingtop">
       <h1>LifeTrackR Finance Tracker</h1>
     </div>
-    <div id="skeleton">
+    <!------------------------------------------------------------------------------->
+    <div id="skeleton_expense">
       <div style="padding-left: 20px; padding-top: 20px; font-size: larger">
         <p style="display: inline">Expenses</p>
-        <button class="plus" onclick="openpopup();create_new_element();">
+        <button
+          class="plus"
+          onclick="openpopup('skeleton_expense');"
+          style="color: #2c63c1"
+        >
           +
         </button>
       </div>
@@ -44,15 +59,48 @@
       </div>
     </div>
     <!------------------------------------------------------------------------------->
+    <div id="skeleton_income">
+      <div style="padding-left: 20px; padding-top: 20px; font-size: larger">
+        <p style="display: inline">Income</p>
+        <button
+          class="plus"
+          onclick="openpopup('skeleton_income');"
+          style="color: #89e156"
+        >
+          +
+        </button>
+      </div>
+      <div class="expense">
+        <div class="receive">
+          <p style="font-size: 30px; margin-bottom: 0px">₹</p>
+          <p class="num">24</p>
+        </div>
+        <div>
+          <h2>Title</h2>
+          <p>date dd/mm/yy</p>
+          <p>Place</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------------->
+    <div id="skeleton_recommendations">
+      <h1>Crypto Price Display</h1>
+      <div id="crypto-prices">
+        <h1 id="test"></h1>
+      </div>
+
+      <script src="parama.js"></script>
+    </div>
+    <!------------------------------------------------------------------------------->
     <form id="popup">
-      <h2 style="text-align: center">Add Expense</h2>
+      <h2 style="text-align: center" id="popuptitle">Add Expense</h2>
       <div class="inputbox">
         <input
           type="number"
           class="amount"
           placeholder="Amount spent"
           name=""
-          id=""
+          id="amt"
         />
       </div>
       <div class="inputbox">
@@ -87,8 +135,9 @@
       </div>
       <input
         type="button"
-        onclick="closepopup()"
+        onclick="closepopup_n_ADD('skeleton_expense')"
         class="submit-button"
+        id="addbutton"
         value="Add"
       />
     </form>
