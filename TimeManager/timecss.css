@@ -135,3 +135,24 @@ section {
 .controls #reset {
     display: none;
 }
+
+input{
+    border-radius: 20px;
+    border : 2px solid  rgb(120, 196, 8);
+    padding : 7px ; 
+    margin-top : 10px ; 
+    transition: 0.4s ;
+    
+    
+}
+
+input:hover{
+    padding : 9px ; 
+    border : 7px solid  rgb(120, 196, 8);
+}
+.caution{
+    color : white ; 
+    text-align: center;
+    font-size: smaller;
+    margin-top: 15px ;
+}

@@ -24,9 +24,15 @@
         <div class="container">
             <h1>LifeTrackR</h1>
             <form action="" name = "timerform">
-                <input type="number"  name = "mins">
-                <input type="number"  name = "secs">
+                <input type="number"  name = "mins" placeholder="Mins" required>
+                <input type="number"  name = "secs" placeholder="Sec" required>
             </form>
+            <div class = "caution">
+                &#x26A0; Caution : Think before you dive. Once you start the timer the is no 
+                    turning back.<br>You have to complete what you started within the given time. 
+                    <br>The break display down here will turn on once the timer reach 0:00 <br>Best of Luck 
+
+            </div>
             
            <!--  <button onclick="ge">Set</button>  --> 
             <div class="painel">
@@ -47,7 +53,7 @@
             <div class="controls">
                 <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
 
-                <a id="reset" href="./"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                <a id="reset" href="timeindex.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
             </div>
         </div>
     </section>
