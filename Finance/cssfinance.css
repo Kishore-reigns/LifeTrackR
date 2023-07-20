@@ -182,3 +182,13 @@ body{
         height: 100%;
         backdrop-filter: blur(20px);
       }
+      #crypto-prices{
+        display: flex;
+        justify-content: center;
+      }
+      .flexcard{
+        padding: 30px;
+        display: inline-block;
+        background-color: #242424;
+        margin-right: 30px;
+      }
