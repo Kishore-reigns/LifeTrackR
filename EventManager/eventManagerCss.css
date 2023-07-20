@@ -3,38 +3,42 @@
 }
 body{
     transition: 1s ;
+        margin: 0;
+        padding: 0;
+
 }
-header{
+.header{
+    width : 100% ;
+    background-color: rgba(50, 52, 68, 0.776);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    /* background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%); */
     position: fixed;
-    width : 100% ; 
-    background-color: #36096d;
-    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
- 
-    float : left ; 
-    z-index: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+    float : left ;
+    z-index: 100;
 }
 .siteName{
     display : flex  ;
     justify-content: left ;
-    align-items: center ; ; 
+    align-items: center ;
     float : left;
     font-size: larger;
     font-weight: bolder;
-    width : 30%; 
-    height: 50px ; 
-
-    
+    width : 30%;
+    height: 50px ;
 }
 
 .headerRight{
     display: flex;
-    float : right   ; 
+    float : right   ;
     align-items: center;
     justify-content: right ;
-    width : 30%; 
-    height: 50px ; 
+    width : 30%;
+    height: 50px ;
     padding: 6px ;
- 
+
 }
 
 .nameIndex{
@@ -49,7 +53,7 @@ header{
     font-size: xx-large;
     text-align: center;
     border-radius: 50%;
-   
+
 }
 
 .userName{
@@ -57,40 +61,55 @@ header{
     font-size: x-large;
     font-weight: bolder;
     font-family :monospace ;
-    
+
 }
 
 .leftTabs{
+    background-color: #2E3047c6;
+    backdrop-filter: blur(10px);
     position: fixed;
-    top :  60px ; 
-    float : left ; 
-    border : 1px solid black ; 
+    padding: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    top :  60px ;
+    border-radius: 30px;
+    float : left ;
+    border : 1px solid black ;
     height:  100%;
     width: 320px ;;
-   background-color: #1fd1f9;
-    background-image: linear-gradient(315deg,#b621fe 0%, #1fd1f9  74%);
+   /* background-color: #1fd1f9; */
+    /* background-image: linear-gradient(315deg,#b621fe 0%, #1fd1f9  74%); */
 
 
 }
 
 .leftTabs button{
-    width : 100% ; 
+    width : 100% ;
+    border-radius: 30px;
+    height: 80px;
     padding : 5px ;
     font-size: larger;
     font-weight: bolder;
     font-family: monospace;
-    background-color: rgba(127, 255, 212, 0.265); 
-    border : none ; 
+    /* background-color: rgba(127, 255, 212, 0.265); */
+    background-color: #3bb89c;
+    border : none ;
     transition: 0.5s;
-    margin-bottom : 5px ; 
+    margin-bottom : 5px ;
+    color: #fff;
 }
 
 .leftTabs button:hover{
-    background-color: rgba(5, 98, 67, 0.5); 
-    border-bottom : 2px solid black  ; 
+    background-color: #309e86e7;
+    border-bottom : 2px solid black  ;
     cursor: pointer;
-
 }
+
+.leftTabs button:active{
+    padding : 7px ;
+    background-color: #3bb89d95;
+}
+
 .settings , .theme{
     transition: 0.5s ease-in-out;
 }
@@ -99,22 +118,13 @@ header{
 }
 /*
 ////////////////////
-switches 
+switches
 ///////////////////
 */
-.main,.TodoMainBox{
-    position: absolute;
-    top : 80px ; 
-    margin-left: 25% ;
-    width: 80%;
-    z-index: -1;
-}
 
-#TodoMainBox{
-    display: none ;
-}
+
 #calenderBox{
-    display : none ; 
+    display : none ;
 }
 /*
 ////////////////////
@@ -122,43 +132,62 @@ NOTES AND TODO MIXED !!!!!!!!!!!!!!
 ///////////////////
 */
 .addNotes{
-    width : 100px ; 
-    height : 150px ; 
+    width : 100px ;
+    height : 150px ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
     font-weight: bolder;
-    
+
 }
 .headAndAdd{
     display: flex;
-    height : 100px ; 
+    height : 100px ;
 }
 .addNotesbutton{
-    float : left ; 
-    height: 50px ;
+    float : left ;
+    height: 35px ;
+    width: 200px;
     margin : 2px ;
-    margin-left : 8px ; 
-    margin-top : 10px ;  
-    padding : 5px ; 
+    margin-left : 8px ;
+    margin-top : 10px ;
+    padding : 5px ;
     background-color: #0cb9e0;
-    color : white ; 
-    border : none ; 
+    color : white ;
+    border : none ;
     transition: 0.3s;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     border: 1px solid black ;
+
+    
+    border-radius: 30px;
+    padding : 5px ;
+    font-weight: bolder;
+    font-family: monospace;
+    background-color: #3bb89c;
+    border : none ;
+    transition: 0.5s;
+    margin-bottom : 5px ;
 }
 .addNotesbutton:hover {
-    padding : 7px ; 
-    background-color: #067a94;
+    padding : 7px ;
+    background-color: #3bb89db4;
+    /* background-color: #067a94; */
+
+}
+
+.addNotesbutton:active {
+    padding : 7px ;
+    background-color: #3bb89d95;
+    /* background-color: #067a94; */
 
 }
 
 .notesTitle,.todoTitle{
     background-color: red;
-    color : white ; 
+    color : white ;
     width : 90% ;
-    margin-bottom : 7px  ; 
+    margin-bottom : 7px  ;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
@@ -170,7 +199,7 @@ NOTES AND TODO MIXED !!!!!!!!!!!!!!
 
 .notesTextarea{
     resize: vertical;
-    width : 90% ; 
+    width : 90% ;
     border-radius: 5% ;
     background-color: antiquewhite;
     transition: 0.3s;
@@ -181,7 +210,7 @@ NOTES AND TODO MIXED !!!!!!!!!!!!!!
 .notesTextarea:hover{
     background-color:  rgb(238, 213, 179);
     outline: 3px solid black ;
-    
+
 }
 
 .deletebutton,.todoadd{
@@ -190,11 +219,11 @@ NOTES AND TODO MIXED !!!!!!!!!!!!!!
     background-color: red;
     color : white ;
     font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 0.3s;
 }
 .deletebutton:hover,.todoadd:hover{
-    
+
     padding: 6px ;
     background-color: rgb(185, 8, 8);
 
@@ -205,11 +234,11 @@ NOTES AND TODO MIXED !!!!!!!!!!!!!!
     background-color: rgb(185, 185, 7);
     color : white ;
     font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 0.3s;
 }
 .starbutton:hover,.starbuttonTodo:hover{
-    
+
     padding: 6px ;
     background-color: rgb(195, 195, 10);
 
@@ -220,12 +249,12 @@ form{
     align-items: center;
     margin: auto ;
     margin-bottom: 10px;
-    width : 50% ; 
+    width : 50% ;
 }
 
 /*
 ////////////////////
-TO DO 
+TO DO
 ///////////////////
 */
 
@@ -235,17 +264,17 @@ TO DO
     align-items: center;
     margin: auto ;
     margin-bottom: 10px;
-    width : 80% ; 
-    border : 2px solid black ; 
+    width : 80% ;
+    border : 2px solid black ;
 }
 
 .todoTitle{
     width : 100% ;
 }
 .todoadd{
-    width : 50% ; 
+    width : 50% ;
     background-color : green ;
-    color : white ;  
+    color : white ;
 }
 .todoadd:hover{
     background-color : rgb(30, 180, 30) ;
@@ -255,16 +284,16 @@ TO DO
 }
 
 .listinputvalue{
-    width : 90% ; 
-    border : none ; 
-    border-bottom : 2px solid black ; 
+    width : 90% ;
+    border : none ;
+    border-bottom : 2px solid black ;
     transition: 0.3s ;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 .listinputvalue:hover{
     background-color: bisque;
-    border-bottom : 2px solid black ; 
+    border-bottom : 2px solid black ;
 }
 
 /*
@@ -279,9 +308,152 @@ Calender
     align-items : center ;
     margin: auto ;
 
- 
+
 }
 
 iframe{
-    margin-top : 80px ; 
+    margin-top : 80px ;
 }
+
+#notesPopup,.popupTodo{
+    position: fixed;
+    top: 120px;
+    left: 38vw;
+    z-index: 2;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    /* background-color: #353535c8; */
+    /* background-color: #1F3F49; */
+    background-color: #28314E;
+    backdrop-filter: blur(20px);
+    width: 400px;
+    box-shadow: 5px 5px 10px rgb(32, 31, 31) ;
+    padding-left: 30px;
+}
+#blursheet{
+    display: none;
+    color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+  }
+.textinput{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    width:350px;
+    height: 50px;
+    font-size: 25px;
+}
+.textinput:focus{
+    outline: none;
+}
+
+.textinput::placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.615);
+    font-weight: 500;
+    font-size: 25px;
+    opacity: 1; /* Firefox */
+  }
+
+ .textinput :-ms-.input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.678);
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .inputbox{
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transform: translateX(-12px);
+    border-bottom: solid 2px #fff;
+}
+.TXTarea{
+    width: 342px;
+    height: 226px;
+    resize: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+.TXTarea:focus{
+    outline: none;
+}
+
+.submitnote {
+    height: 36px;
+    width: 95px;
+    background-color: rgb(46, 164, 79);
+    border-radius: 6px;
+    color: white;
+    border: none;
+    transition: opacity 0.15s;
+    cursor: pointer;
+    margin-right: 12px;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+  .submitnote:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  .notedisplay{
+    width:450px;
+    background-color: #6f8695;
+    /* background-color: #05204A; */
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px;
+
+  }
+  .title h2{
+    /* background-color: rgba(48, 25, 52, 0.67); */
+    background-color: #f4fdff;
+    border-radius: 30px;
+    color : black ;
+    margin-top: 0px;
+    height: 50px;
+
+  }
+  .main{
+    position: absolute;
+    top : 65px ;
+    border-radius: 30px;
+    margin-left: 22% ;
+    background-color: #2E3047c6;
+    backdrop-filter: blur(10px);
+    border : 2px solid black ;
+    width: 565px;
+}
+.TodoMainBox{
+    position: absolute;
+    top : 65px ;
+    border-radius: 30px;
+    margin-left: 24% ;
+    z-index: -1;
+    background-color: #2e3047ce;
+    backdrop-filter: blur(10px);
+}
+
+  #notesDiv{
+    width : 500px ;
+  }
+  #TodoMainBox{
+    position: relative;
+    left: 550px;
+    border : 2px solid black ;
+    width: 565px;
+}
+
+  body{
+     overflow-x: hidden;
+     background-image:url("images_eventmanager/shade.avif");
+     background-size: contain;
+  }
+

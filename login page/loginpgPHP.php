@@ -1,13 +1,12 @@
-<?php
+<?php session_start();
 // Retrieve form data
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Database connection
 $servername = "localhost";
 $db_username = "root";
-$db_password = "abc";
-$db_name = "lifetrackr";
+$db_password = "";
+$db_name = "logindb";
 
 $conn = new mysqli($servername, $db_username, $db_password, $db_name);
 
@@ -17,23 +16,32 @@ if ($conn->connect_error) {
 }
 
 // Prepare and execute the query
-$stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+$stmt = $conn->prepare("SELECT * FROM register WHERE username = ?");
 $stmt->bind_param("s", $username);
 $stmt->execute();
 $result = $stmt->get_result();
 
 // Check if the user exists
-if ($result->num_rows === 1) {
+if ($result->num_rows == 1) {
     $row = $result->fetch_assoc();
-    if (password_verify($password, $row['password'])) {
-        echo "Login successful!";
-        header("Location: ../home page/homeIndex.html");
+    echo $row['password'] ;
+    if ($password== $row['password']) {
+        // echo "<sript> window.alert('Login successful!')</script>";
+        $_SESSION['username'] = $username;
+        header("Location: ../home page/homeIndex.php");
         // Redirect to the user's profile page or any other page you want
-    } else {
-        echo "Incorrect password!";
+    }
+     else {
+
+        header("Location: login page.php?error=Incorrect Password");
+	    exit();
+        // echo "Incorrect password!";
     }
 } else {
-    echo "User not found!";
+    
+    header("Location: login page.php?error=User Not Found");
+    exit();
+    // echo "User not found!";
 }
 
 $stmt->close();

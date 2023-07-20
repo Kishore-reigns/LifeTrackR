@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulleted List Form</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li::before {
+        content: "\2022"; /* Bullet character */
+        margin-right: 5px;
+      }
+    </style>
+    <script>
+      function convertToBullet(event) {
+        if (event.keyCode === 13) {
+          // Check if Enter key is pressed
+          event.preventDefault(); // Prevent default behavior of Enter key
+
+          var textarea = event.target;
+          var text = textarea.value.trim();
+          var bullet = "\u2022 "; // Bullet character
+
+          if (text.length > 0) {
+            textarea.value += "\n" + bullet; // Add new bullet on a new line
+          }
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
