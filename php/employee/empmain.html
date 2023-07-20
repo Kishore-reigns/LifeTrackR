@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+
+    <style>
+        form{
+            border: 2px solid black ;
+            border-radius : 20px ; 
+            height : 300px ; 
+            width: 400px ;
+            text-align: center;
+            justify-content: center;
+            color : black ; 
+            background-color: rgb(241, 193, 134);
+            padding : 6px ; 
+            float : left ;
+            margin-left : 50px ; 
+            margin-right : 50px ; 
+        }
+        input{
+            border : none ;
+            border-bottom : 2px solid black ; 
+            padding : 5px ; 
+            margin-top : 3px; 
+            background-color: transparent;
+        }
+        input[type = "submit"]{
+            background-color: green;
+            color : white ; 
+            border-radius: 20px ;
+            padding : 8px ; 
+            margin-top : 7px; 
+        }
+        button{
+            background-color: darksalmon;
+        }
+
+    
+    </style>
+
+</head>
+<body>
+<!-- 
+    <div class="buttons">
+        <button onclick = "insert()">Insert</button>
+        <button onclick = "del()">Delete</button>
+        <button onclick = "Select()">Select</button>
+        <button onclick = "create()">Create</button>
+    </div> -->
+
+    <form action="insert.php" method="post" id = "insertform">
+        <h2>There exists a pre defined table in the database employee<br>Enter the values for the table</h2>
+        <label for="">Employee name : </label><input type="text" name = 'empname'><br>
+        <label for="">Employee id : </label><input type="text" name = 'empid'><br>
+        <label for="">Employee salary: </label><input type="number" name = 'empsal'><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="del.php" method="post" id = "delform">
+        <h2>There exists a pre defined table in the database employee<br>Enter the emp id to delete the record </h2>
+        <label for="">Employee id : </label><input type="text" name = 'delempid'><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="sel.php" method="post" id = "selform">
+        <h2>There exists a pre defined table in the database employee<br>Click this button below to display the employess </h2>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="createdb.php" method="post" id = "createform">
+        <h2>Create a new database </h2>
+        <label for="">Database name : </label><input type="text" name = 'dbname'><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student - html</title>
+
+    <style>
+        form{
+            background-color: rgb(238, 193, 135);
+            color : black ; 
+            text-align: center;
+            padding: 6px ;
+            justify-content: center;
+
+        }
+
+        input{
+            margin-top: 10px ;
+            border: none;
+            border-bottom : 2px solid black ; 
+            background-color: rgba(250, 235, 215, 0);
+        }
+
+        input[type = "submit"]{
+            background-color: green;
+            padding : 8px ; 
+
+            border-radius: 20px ;
+            margin-top : 20px ; 
+        }
+        input[type = "reset"]{
+            background-color: red;
+            padding : 8px ; 
+            border-radius: 20px ;
+            margin-top : 20px ; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <form action="studentinsertphp.php" method = "post">
+        <h1>Enter the details to insert the value into db</h1>
+        <label for="">Name : </label>
+        <input type="text" name="name" id=""><br>
+        <label for="">reg no : </label>
+        <input type="text" name="id" id=""><br>
+        <label for="">address : </label>
+        <input type="text" name="address" id=""><br>
+        <label for="">email : </label>
+        <input type="mail" name="mail" id=""><br>
+        <label for="">sem 1 gpa : </label>
+        <input type="text" name="gpa" id=""><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <form action="studentselectphp.php" method = "post">
+        <h1>Enter the id to get the record </h1>
+        <label for="">reg no : </label>
+        <input type="text" name="id" id=""><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <form action="studentupdatephp.php" method = "post">
+        <h1>Enter the register to update the details</h1>
+
+        <label for="">reg no : </label>
+        <input type="text" name="id" id=""><br>
+        
+        
+        <label for="">Name : </label>
+        <input type="text" name="name" id=""><br>
+        <label for="">address : </label>
+        <input type="text" name="address" id=""><br>
+        <label for="">email : </label>
+        <input type="mail" name="mail" id=""><br>
+        <label for="">sem 1 gpa : </label>
+        <input type="text" name="gpa" id=""><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+    
+</body>
+</html>

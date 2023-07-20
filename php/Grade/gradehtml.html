@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022503011-php4</title>
+
+    <style>
+        form{
+            border: 2px solid black ;
+            border-radius : 20px ; 
+            height : auto ; 
+            width: 400px ;
+            text-align: center;
+            justify-content: center;
+            color : black ; 
+            background-color: rgb(241, 193, 134);
+            padding : 6px ; 
+            margin : auto ; 
+        }
+        input{
+            border : none ;
+            border-bottom : 2px solid black ; 
+            padding : 5px ; 
+            margin-top : 3px; 
+            background-color: transparent;
+        }
+        input[type = "submit"]{
+            background-color: green;
+            color : white ; 
+            border-radius: 20px ;
+            padding : 8px ; 
+            margin-top : 7px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="gradephp.php" method = "POST">
+
+        <h1>Enter the following detials </h1>
+        <label for="">Name : </label><input type="text" name = "name" ><br>
+        <label for="">Reg No : </label><input type="number" name = "regno" ><br>
+        <label for="">Email : </label><input type="email" name = "mail" ><br>
+        <h2>Enter marks : </h2>
+        <label for="">Tamil : </label><input type="number" name = "tamil" ><br>
+        <label for="">English : </label><input type="number" name = "english" ><br>
+        <label for="">Maths : </label><input type="number" name = "maths" ><br>
+        <label for="">Physics : </label><input type="number" name = "physics" ><br>
+        <label for="">CT : </label><input type="number" name = "ct" ><br>
+        <label for="">Programing with C : </label><input type="number" name = "c" ><br>
+
+        <input type="submit" value = "Submit" ><br>
+        
+    </form>
+    
+</body>
+</html>
