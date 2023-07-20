@@ -16,7 +16,9 @@ function start() {
  var workTime = document.timerform.mins.value;
 workTime = parseInt(workTime);
 
-
+// if(isNan(workTime)){
+//   workTime=0;
+// }
 
 let workTittle = document.getElementById('work');
 let breakTittle = document.getElementById('break');

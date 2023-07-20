@@ -15,7 +15,7 @@
     </nav>
 
 
-    <div id="loginbox" >
+    <form id="loginbox" method="post" action="loginpgPHP.php" >
       <h2 style="font-weight: 1000; text-align: center">Login</h2>
       <div class="vertical_center">
         <div class="inputbox">
@@ -24,6 +24,8 @@
             id="username"
             class="input_text"
             placeholder="User Name"
+            name="username"
+            required
           />
           <img src="images_login page/user_icon.webp" class="lockicon" style="width: 33px; right: 38px;" alt="">
 
@@ -34,6 +36,8 @@
             class="input_text"
             id="pass1"
             placeholder="Password"
+            name="password"
+            required
           />
           <img src="images_login page/lock-icon-11.png" style="cursor: pointer;" onclick="toggle_password(1)" class="lockicon" alt="" />
         </div>
@@ -50,12 +54,12 @@
           </label>
           <a href="#">Forgot password?</a>
         </div>
-        <a href="../home page/homeIndex.html"> <button class="login_button_2">Login</button> </a>
+        <input type="submit" class="login_input_2" value="Login"> 
         <p style="text-align: center">
           Don't Have An Account? <a href="#" onclick="disp_reg()">Register</a>
         </p>
       </div>
-    </div>
+    </form>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
     <div id="registerbox" >
       <h2 style="font-weight: 1000; text-align: center">Register</h2>
