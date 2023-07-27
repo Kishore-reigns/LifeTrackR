@@ -81,6 +81,9 @@ body{
     height: 30px;
     margin: 10px;
     background-color: #007bff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px solid #fff;
   }
   .bar_inc{
     background-color: #89e156;
@@ -213,6 +216,7 @@ select option{
         display: inline-block;
         background-color: #242424;
         margin-right: 30px;
+        border-radius: 30px;
       }
       .moveright{
         margin-left:100px ;
@@ -227,7 +231,7 @@ select option{
         border: none;
         transition: opacity 0.15s;
         cursor: pointer;
-        margin-left: 70px;
+        margin-left: 100px;
         margin-top: 20px;
         font-weight: bold;
       }

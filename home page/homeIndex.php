@@ -70,14 +70,14 @@
         />
         <p class="textbelowimage">Where Imagination Meets Execution</p>
       </button>
-      <button class="Finance" onclick="">
+      <button class="Finance" onclick="window.location.href = '../Finance/finance.php'">
         <h3>Finance</h3>
         <img
           src="financeImg.png"
           alt="Img isn't responding"
           height="200px"
           widhth="200px"
-          onclick="window.location.href = '../Finance/finance.php'"
+          
         />
         <p class="textbelowimage">Smart Strategies, Brighter Finances</p>
       </button>

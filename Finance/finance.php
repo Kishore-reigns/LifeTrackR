@@ -157,51 +157,63 @@ include('../config.php');
         <div class="flexcard" id="pdt1">
           <img
             class="im"
-            src="images_finance/profile_pic.png"
-            style="object-fit: contain"
+            src="images_finance/bitcoin.png"
+            style="object-fit: contain;
+            height:300px;
+            width:300px;"
           />
           <div class="company_name">
-            <h2 id="coin1">abc</h2>
+            <h2 id="coin1" style="text-align:center;">abc</h2>
           </div>
           <div class="price">
-            <span class="price_whole" id="price1"></span><br />
+            <span class="price_whole" id="price1" style="text-align:center"></span><br />
           </div>
           <div class="buttons">
+            <a href="https://cryptospaniards.com/simulator/trade/usd/btc">
             <input class="github" type="button" value="Buy" />
+            </a>
           </div>
         </div>
         <!------------------------------------------------------------------------------->
         <div class="flexcard" id="pdt2">
           <img
             class="im"
-            src="images_finance/profile_pic.png"
-            style="object-fit: contain"
+            src="images_finance/etherium.png"
+            style="object-fit: contain;
+            height:300px;
+            width:300px;"
           />
           <div class="company_name">
-            <h2 id="coin2">abc</h2>
+            <h2 id="coin2" style="text-align:center;">abc</h2>
           </div>
           <div class="price">
-            <span class="price_whole" id="price2"></span><br />
+            <span class="price_whole" id="price2" style="text-align:center"></span><br />
           </div>
           <div class="buttons">
+            <a href="https://cryptospaniards.com/simulator/trade/usd/eth">
             <input class="github" type="button" value="Buy" />
+          </a>
           </div>
         </div>
         <!------------------------------------------------------------------------------->
         <div class="flexcard" id="pdt3">
           <img
             class="im"
-            src="images_finance/profile_pic.png"
-            style="object-fit: contain"
+            src="images_finance/litecoin.png"
+            style="object-fit: contain;
+            height:300px;
+            width:300px;"
           />
           <div class="company_name">
-            <h2 id="coin3">abc</h2>
+            <h2 id="coin3" style="text-align:center;">abc</h2>
           </div>
           <div class="price">
-            <span class="price_whole" id="price3"></span><br />
+            <span class="price_whole" id="price3" style="text-align:center"></span><br />
           </div>
           <div class="buttons">
+            <a href="https://cryptospaniards.com/simulator/trade/usd/ltc">
             <input class="github" type="button" value="Buy" />
+            </a>
           </div>
         </div>
       </div>
@@ -371,7 +383,7 @@ include('../config.php');
 
         // echo $largestAmount." ".$amount ;
 
-        echo $category.'<div class="bar" style="width: ' . $barWidth . '%;"></div>';
+        echo $category.'<div class="bar" style="width: ' . ($barWidth-4) . '%;"></div>';
       }
 
       // Close the database conn
@@ -440,7 +452,7 @@ include('../config.php');
         // echo $largestAmount." ".$amount ;
 
         // Output the bar graph
-        echo $category.'<div class="bar_inc" style="width: ' . $barWidth . '%;"></div>';
+        echo $category.'<div class="bar_inc" style="width: ' . ($barWidth-4) . '%;"></div>';
       }
 
 

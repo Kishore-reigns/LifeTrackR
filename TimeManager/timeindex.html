@@ -54,14 +54,13 @@
         <div class="caution">
           &#x26A0; Caution : Think before you dive. Once you start the timer the
           is no turning back.<br />You have to complete what you started within
-          the given time. <br />The break display down here will turn on once
-          the timer reach 0:00 <br />Best of Luck
+          the given time. <br />You'll be notified when your time has run out
+          <br />Best of Luck
         </div>
 
         <!--  <button onclick="ge">Set</button>  -->
         <div class="painel">
-          <p id="work">work</p>
-          <p id="break">break</p>
+          <p id="work" style="margin-left: 50px">Pomodoro</p>
         </div>
 
         <div class="timer">
@@ -85,7 +84,7 @@
         </div>
       </div>
     </section>
-
+    <audio id="alarm" src="alarm.wav" preload="auto"></audio>
     <!-- SCRIPT -->
     <script src="timejs.js"></script>
   </body>

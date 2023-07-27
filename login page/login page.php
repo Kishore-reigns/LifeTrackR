@@ -9,8 +9,8 @@
   <body>
     <nav class="navbar">
       <a class="top_links" style="margin-top: 8px" href="../About USS/aboutus.html"> About </a>
-      <a class="top_links" style="margin-top: 8px" href="#"> Services </a>
-      <a class="top_links" style="margin-top: 8px" href="#"> Contact </a>
+      <a class="top_links" style="margin-top: 8px" href="../services/serviceIndex.html"> Services </a>
+      <a class="top_links" style="margin-top: 8px" href="../Contact/contactindex.html"> Contact </a>
       <button class="login_button" onclick="disp_log()">Login</button>
     </nav>
 
