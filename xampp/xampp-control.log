@@ -1,0 +1,184 @@
+11:41:59  [main] 	Initializing Control Panel
+11:41:59  [main] 	Windows Version:  Home  64-bit
+11:41:59  [main] 	XAMPP Version: 8.2.4
+11:41:59  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+11:41:59  [main] 	Running with Administrator rights - good!
+11:41:59  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:41:59  [main] 	Checking for prerequisites
+11:41:59  [main] 	All prerequisites found
+11:41:59  [main] 	Initializing Modules
+11:41:59  [Apache] 	XAMPP Apache is already running on port 80
+11:41:59  [Apache] 	XAMPP Apache is already running on port 443
+11:41:59  [main] 	Starting Check-Timer
+11:41:59  [main] 	Control Panel Ready
+11:42:07  [mysql] 	Installing service...
+11:42:07  [mysql] 	Successful!
+11:42:11  [mysql] 	Attempting to start MySQL service...
+11:42:11  [mysql] 	Status change detected: running
+11:42:18  [mysql] 	Status change detected: stopped
+11:42:18  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:42:18  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:42:18  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:42:18  [mysql] 	Press the Logs button to view error logs and check
+11:42:18  [mysql] 	the Windows Event Viewer for more clues
+11:42:18  [mysql] 	If you need more help, copy and post this
+11:42:18  [mysql] 	entire log window on the forums
+11:42:32  [mysql] 	Attempting to start MySQL service...
+11:42:32  [mysql] 	Status change detected: running
+11:42:39  [mysql] 	Status change detected: stopped
+11:42:39  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:42:39  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:42:39  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:42:39  [mysql] 	Press the Logs button to view error logs and check
+11:42:39  [mysql] 	the Windows Event Viewer for more clues
+11:42:39  [mysql] 	If you need more help, copy and post this
+11:42:39  [mysql] 	entire log window on the forums
+11:43:25  [mysql] 	Attempting to start MySQL service...
+11:43:25  [mysql] 	Status change detected: running
+11:43:32  [mysql] 	Status change detected: stopped
+11:43:32  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:43:32  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:43:32  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:43:32  [mysql] 	Press the Logs button to view error logs and check
+11:43:32  [mysql] 	the Windows Event Viewer for more clues
+11:43:32  [mysql] 	If you need more help, copy and post this
+11:43:32  [mysql] 	entire log window on the forums
+11:43:48  [mysql] 	Attempting to start MySQL service...
+11:43:48  [mysql] 	Status change detected: running
+11:43:55  [mysql] 	Status change detected: stopped
+11:43:55  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:43:55  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:43:55  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:43:55  [mysql] 	Press the Logs button to view error logs and check
+11:43:55  [mysql] 	the Windows Event Viewer for more clues
+11:43:55  [mysql] 	If you need more help, copy and post this
+11:43:55  [mysql] 	entire log window on the forums
+11:44:12  [mysql] 	Attempting to start MySQL service...
+11:44:12  [mysql] 	Status change detected: running
+11:44:19  [mysql] 	Status change detected: stopped
+11:44:19  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:44:19  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:44:19  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:44:19  [mysql] 	Press the Logs button to view error logs and check
+11:44:19  [mysql] 	the Windows Event Viewer for more clues
+11:44:19  [mysql] 	If you need more help, copy and post this
+11:44:19  [mysql] 	entire log window on the forums
+11:49:43  [mysql] 	Status change detected: running
+11:49:50  [mysql] 	Status change detected: stopped
+11:49:50  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:49:50  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:49:50  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:49:50  [mysql] 	Press the Logs button to view error logs and check
+11:49:50  [mysql] 	the Windows Event Viewer for more clues
+11:49:50  [mysql] 	If you need more help, copy and post this
+11:49:50  [mysql] 	entire log window on the forums
+11:50:07  [mysql] 	Status change detected: running
+11:50:13  [mysql] 	Status change detected: stopped
+11:50:13  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:50:13  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:50:13  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:50:13  [mysql] 	Press the Logs button to view error logs and check
+11:50:13  [mysql] 	the Windows Event Viewer for more clues
+11:50:13  [mysql] 	If you need more help, copy and post this
+11:50:13  [mysql] 	entire log window on the forums
+11:50:20  [Apache] 	Status change detected: stopped
+11:50:20  [Apache] 	Error: Apache shutdown unexpectedly.
+11:50:20  [Apache] 	This may be due to a blocked port, missing dependencies, 
+11:50:20  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+11:50:20  [Apache] 	Press the Logs button to view error logs and check
+11:50:20  [Apache] 	the Windows Event Viewer for more clues
+11:50:20  [Apache] 	If you need more help, copy and post this
+11:50:20  [Apache] 	entire log window on the forums
+11:52:37  [Apache] 	Status change detected: running
+11:53:22  [mysql] 	Status change detected: running
+11:55:41  [mysql] 	Status change detected: stopped
+11:55:41  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:55:41  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:55:41  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:55:41  [mysql] 	Press the Logs button to view error logs and check
+11:55:41  [mysql] 	the Windows Event Viewer for more clues
+11:55:41  [mysql] 	If you need more help, copy and post this
+11:55:41  [mysql] 	entire log window on the forums
+11:55:43  [Apache] 	Status change detected: stopped
+11:55:43  [Apache] 	Error: Apache shutdown unexpectedly.
+11:55:43  [Apache] 	This may be due to a blocked port, missing dependencies, 
+11:55:43  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+11:55:43  [Apache] 	Press the Logs button to view error logs and check
+11:55:43  [Apache] 	the Windows Event Viewer for more clues
+11:55:43  [Apache] 	If you need more help, copy and post this
+11:55:43  [Apache] 	entire log window on the forums
+11:56:39  [Apache] 	Status change detected: running
+11:56:48  [mysql] 	Status change detected: running
+11:56:54  [mysql] 	Status change detected: stopped
+11:56:54  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:56:54  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:56:54  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:56:54  [mysql] 	Press the Logs button to view error logs and check
+11:56:54  [mysql] 	the Windows Event Viewer for more clues
+11:56:54  [mysql] 	If you need more help, copy and post this
+11:56:54  [mysql] 	entire log window on the forums
+11:58:37  [Apache] 	Status change detected: stopped
+11:58:38  [Apache] 	Error: Apache shutdown unexpectedly.
+11:58:38  [Apache] 	This may be due to a blocked port, missing dependencies, 
+11:58:38  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+11:58:38  [Apache] 	Press the Logs button to view error logs and check
+11:58:38  [Apache] 	the Windows Event Viewer for more clues
+11:58:38  [Apache] 	If you need more help, copy and post this
+11:58:38  [Apache] 	entire log window on the forums
+11:58:43  [Apache] 	Status change detected: running
+11:58:50  [mysql] 	Status change detected: running
+11:58:57  [mysql] 	Status change detected: stopped
+11:58:57  [mysql] 	Error: MySQL shutdown unexpectedly.
+11:58:57  [mysql] 	This may be due to a blocked port, missing dependencies, 
+11:58:57  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+11:58:57  [mysql] 	Press the Logs button to view error logs and check
+11:58:57  [mysql] 	the Windows Event Viewer for more clues
+11:58:57  [mysql] 	If you need more help, copy and post this
+11:58:57  [mysql] 	entire log window on the forums
+11:59:28  [Apache] 	Status change detected: stopped
+11:59:28  [Apache] 	Error: Apache shutdown unexpectedly.
+11:59:28  [Apache] 	This may be due to a blocked port, missing dependencies, 
+11:59:28  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+11:59:28  [Apache] 	Press the Logs button to view error logs and check
+11:59:28  [Apache] 	the Windows Event Viewer for more clues
+11:59:28  [Apache] 	If you need more help, copy and post this
+11:59:28  [Apache] 	entire log window on the forums
+11:59:33  [Apache] 	Status change detected: running
+11:59:41  [mysql] 	Status change detected: running
+12:10:46  [Apache] 	Status change detected: stopped
+12:10:46  [Apache] 	Error: Apache shutdown unexpectedly.
+12:10:46  [Apache] 	This may be due to a blocked port, missing dependencies, 
+12:10:46  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+12:10:46  [Apache] 	Press the Logs button to view error logs and check
+12:10:46  [Apache] 	the Windows Event Viewer for more clues
+12:10:46  [Apache] 	If you need more help, copy and post this
+12:10:46  [Apache] 	entire log window on the forums
+12:10:52  [mysql] 	Status change detected: stopped
+12:10:52  [mysql] 	Error: MySQL shutdown unexpectedly.
+12:10:52  [mysql] 	This may be due to a blocked port, missing dependencies, 
+12:10:52  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+12:10:52  [mysql] 	Press the Logs button to view error logs and check
+12:10:52  [mysql] 	the Windows Event Viewer for more clues
+12:10:52  [mysql] 	If you need more help, copy and post this
+12:10:52  [mysql] 	entire log window on the forums
+12:11:56  [Apache] 	Status change detected: running
+12:12:05  [mysql] 	Status change detected: running
+18:47:03  [Apache] 	Status change detected: stopped
+18:47:03  [Apache] 	Error: Apache shutdown unexpectedly.
+18:47:03  [Apache] 	This may be due to a blocked port, missing dependencies, 
+18:47:03  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+18:47:03  [Apache] 	Press the Logs button to view error logs and check
+18:47:03  [Apache] 	the Windows Event Viewer for more clues
+18:47:03  [Apache] 	If you need more help, copy and post this
+18:47:03  [Apache] 	entire log window on the forums
+18:47:11  [mysql] 	Status change detected: stopped
+18:47:11  [mysql] 	Error: MySQL shutdown unexpectedly.
+18:47:11  [mysql] 	This may be due to a blocked port, missing dependencies, 
+18:47:11  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+18:47:11  [mysql] 	Press the Logs button to view error logs and check
+18:47:11  [mysql] 	the Windows Event Viewer for more clues
+18:47:11  [mysql] 	If you need more help, copy and post this
+18:47:11  [mysql] 	entire log window on the forums
+18:51:27  [main] 	Deinitializing Modules
+18:51:27  [main] 	Deinitializing Control Panel
+
