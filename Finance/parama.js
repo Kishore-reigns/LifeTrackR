@@ -15,14 +15,18 @@ const fetchCryptoPrices = async () => {
 // Function to display cryptocurrency prices
 const displayCryptoPrices = (prices) => {
   // Clear the previous prices
-  cryptoPricesElement.innerHTML = '';
-
+  // cryptoPricesElement.innerHTML = '';
+  var i=1;
   // Iterate over the price data and create HTML elements to display the prices
   for (const currency in prices) {
-    const priceElement = document.createElement('p');
-    priceElement.innerText = `${currency.toUpperCase()}:: $${prices[currency].usd}`;
-    cryptoPricesElement.appendChild(priceElement);
-    document.getElementById("test")= `${currency.toUpperCase()}:: $${prices[currency].usd}`
+    
+    // const priceElement = document.createElement('div');
+    // priceElement.setAttribute("class","flexcard");
+    // priceElement.innerText = `${currency.toUpperCase()}: $${prices[currency].usd}`;
+    // cryptoPricesElement.appendChild(priceElement);
+    document.getElementById("coin"+i).innerHTML=`${currency.toUpperCase()}`;
+    document.getElementById("price"+i).innerHTML=`$${prices[currency].usd}`;
+    i++;
   }
 };
 

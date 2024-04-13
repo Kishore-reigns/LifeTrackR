@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer</title>
 
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ICONS -->
-    <script src="https://kit.fontawesome.com/6f3103b13c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6f3103b13c.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="timecss.css">
-
-
-</head>
-<body>
+    <link rel="stylesheet" href="timecss.css" />
+  </head>
+  <body>
     <section>
-        <div class="container">
-            <h1>LifeTrackR</h1>
-            <form action="" name = "timerform">
-                <input type="number"  name = "mins" placeholder="Mins" required>
-                <input type="number"  name = "secs" placeholder="Sec" required>
-            </form>
-            <div class = "caution">
-                &#x26A0; Caution : Think before you dive. Once you start the timer the is no 
-                    turning back.<br>You have to complete what you started within the given time. 
-                    <br>The break display down here will turn on once the timer reach 0:00 <br>Best of Luck 
-
-            </div>
-            
-           <!--  <button onclick="ge">Set</button>  --> 
-            <div class="painel">
-                <p id="work">work</p>
-                <p id="break">break</p>
-            </div>
-
-            <div class="timer">
-                <div class="circle">
-                    <div class="time">
-                        <p id="minutes"></p>
-                        <p>:</p>
-                        <p id="seconds"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="controls">
-                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
-
-                <a id="reset" href="timeindex.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
-            </div>
+      <div class="container">
+        <div>
+          <img
+            src="Logo Light'.jpg"
+            class="userimg"
+            alt=""
+            style="
+              height: 70px;
+              border-radius: 1000px;
+              margin-top: 30px;
+              margin-left: 20px;
+              float: left;
+            "
+            onclick="window.location.href = '../home page/homeIndex.php'"
+          />
+          <h1
+            style="display: inline-block; margin-top: 42px"
+            onclick="window.location.href = '../home page/homeIndex.php'"
+          >
+            LifeTrackR
+          </h1>
         </div>
-    </section>
+        <form action="" name="timerform">
+          <input type="number" name="mins" placeholder="Mins" required />
+          <input type="number" name="secs" placeholder="Sec" required />
+        </form>
+        <div class="caution">
+          &#x26A0; Caution : Think before you dive. Once you start the timer the
+          is no turning back.<br />You have to complete what you started within
+          the given time. <br />You'll be notified when your time has run out
+          <br />Best of Luck
+        </div>
 
+        <!--  <button onclick="ge">Set</button>  -->
+        <div class="painel">
+          <p id="work" style="margin-left: 50px">Pomodoro</p>
+        </div>
+
+        <div class="timer">
+          <div class="circle">
+            <div class="time">
+              <p id="minutes"></p>
+              <p>:</p>
+              <p id="seconds"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start" onclick="start()">
+            <i class="fa-solid fa-play"></i>
+          </button>
+
+          <a id="reset" href="timeindex.html"
+            ><i class="fa-solid fa-arrow-rotate-left"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <audio id="alarm" src="alarm.wav" preload="auto"></audio>
     <!-- SCRIPT -->
     <script src="timejs.js"></script>
-</body>
+  </body>
 </html>

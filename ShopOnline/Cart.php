@@ -119,7 +119,7 @@
     </style>
   </head>
   <body>
-    <a href="../home page/homeIndex.html" class="gobacktohomeheadinglink">
+    <a href="../home page/homeIndex.php" class="gobacktohomeheadinglink">
       <h1 class="heading">LifeTrackR Merchandise</h1></a
     >
     <h1 class="heading">Cart</h1>

@@ -3,13 +3,20 @@ function move_up(num){
 }
 function disp_reg(){
     document.getElementById("loginbox").style.cssText="display:none;";
+    // document.getElementById("forgotbox").style.cssText="display:none;";
     document.getElementById("registerbox").style.cssText="display:block;height:600px;margin-top:50px";
 }
 function disp_log(){
     document.getElementById("loginbox").style.cssText="height:420px";
+    // document.getElementById("forgotbox").style.cssText="display:none;";
     document.getElementById("loginbox").style.cssText="display:block;";
     document.getElementById("registerbox").style.cssText="display:none;";
 }
+// function disp_for(){
+//     document.getElementById("loginbox").style.cssText="display:none;";
+//     document.getElementById("registerbox").style.cssText="display:none;";
+//     // document.getElementById("forgotbox").style.cssText="display:block;";
+// }
 function toggle_password(n)
 {
     var pass=document.getElementById("pass"+n);

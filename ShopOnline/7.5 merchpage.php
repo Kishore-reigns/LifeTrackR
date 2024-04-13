@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="out">
-      <a class="cart" href="Cart.html">
+      <a class="cart" href="Cart.php">
         <input
           type="button"
           class="nike2"
@@ -15,7 +15,7 @@
           onclick="passover()"
         />
       </a>
-      <a href="../home page/homeIndex.html" class="gobacktohomeheadinglink">
+      <a href="../home page/homeIndex.php" class="gobacktohomeheadinglink">
         <h1 class="heading">LifeTrackR Merchandise</h1></a
       >
 
@@ -35,23 +35,23 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">
@@ -83,19 +83,19 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">
@@ -127,19 +127,19 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">
@@ -172,15 +172,15 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">
@@ -211,23 +211,23 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">
@@ -258,23 +258,23 @@
           <div class="star_container">
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
             <img
               class="star"
-              src="https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+              src="images_shop/star.png"
             />
           </div>
           <div class="price">

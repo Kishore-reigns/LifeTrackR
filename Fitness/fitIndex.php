@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
-
+    
     <link rel="stylesheet" href="bmicss.css">
     <script src="fitnessjs.js"></script>
 </head>
@@ -14,7 +14,7 @@
     
     <div class="bmi">
         <h1 class="username">Hello User</h1>
-        <form action="fitmain.html" name="fitnessform" onsubmit="return validateBmi()" method="post">
+        <form action="FitindexPHP.php" name="fitnessform" method="post">
             <div class="height" id="enterheight" name="heightdiv">
                 <h1 class="heightweight">Enter Your Height (cm)</h1>
                 <input placeholder="Enter" type="number" name="ht" required><br>

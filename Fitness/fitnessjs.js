@@ -1,6 +1,40 @@
-var det = [0,1,2,3];
+//const urlParams = new URLSearchParams(window.location.search);
 
-var BMI = 0 ; 
+// Retrieve the value from the URL parameter
+// const aa = urlParams.get('bmi');
+//var BMI = parseFloat(aa).toFixed(1);
+var BMI ;
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    
+var aa=  document.getElementById("bmiValue").innerHTML;
+ BMI=parseFloat(aa).toFixed(1);
+// Use the retrieved value in further JavaScript code
+console.log("BMI value:", BMI);
+
+
+    if (BMI < 18.5){
+        document.getElementById("msgdesc").innerHTML="Light weight";
+    
+    }
+    //normal weight 
+    else if (BMI>=18.5  && BMI < 25){
+        document.getElementById("msgdesc").innerHTML="Normal weight";
+    }
+    //overweight
+    else if (BMI>=25 && BMI < 30){
+        document.getElementById("msgdesc").innerHTML="Over-weight";
+    
+    }
+    //obese
+    else{
+        document.getElementById("msgdesc").innerHTML="Obese";
+    
+    }
+    
+  });
+
 
 function movetoheight(){
     document.getElementById("enterweight").style.display = "block";
@@ -9,52 +43,49 @@ function movetoheight(){
     return false ; 
 }
 
-
-
-function validateBmi(){
-    console.log("submit button pressed ");
-    var h = document.fitnessform.ht.value ;
-    console.log(h);;
-    var w = document.fitnessform.wt.value ;
-    
-    h = parseInt(h);
-    h /= 100  ; 
-    w = parseInt(w);
-    var bmi = w/(h**2);
-    //////////////////////////////// local stoarage for bmi value /////////////////////////////
-    localStorage.setItem(bmi, BMI);
-    BMI = bmi ;
-    //////////////////////////////////////////////////////////////////////////////////////////
-    var description ; 
-    if(isNaN(bmi)){
-        console.log("error in taking value ");
-    return false ;
-    }
-    //underweight / lightweight
-    if (bmi < 18.5){
-        description = "Underweight";
-        document.getElementById("msgdesc").innerHTML = "Under Weight"; 
-    }
-    //normal weight 
-    else if (18.5 >= bmi && bmi < 25){
-        description = "Normal weight";
-        document.getElementById("msgdesc").innerHTML = "Normal Weight"; 
-    }
-    //overweight
-    else if (25 >= bmi && bmi < 30){
-        description = "Overweight";
-        document.getElementById("msgdesc").innerHTML = "Over Weight"; 
-    }
-    //obese
-    else{
-        description = "Obese";
-    }
-    var res = "Your BMI : "+ bmi.toFixed(3) +"<br>"+ description ; 
-    document.getElementById("msgdesc").innerHTML = "Obese"; 
-    console.log(res);
-    return true ; 
-
+function openpopup(){
+    document.getElementById("blursheet").style.display="block";
+    document.getElementById("fitnessformdiv").style.display="block";
 }
+
+function closepopup(){
+    document.getElementById("blursheet").style.display="none";
+    document.getElementById("fitnessformdiv").style.display="none";
+}
+
+// function validateBmi(){
+//     BMI =(document.getElementById("bmiValue").textContent);
+//     console.log("submit button pressed ");
+//     var description ; 
+//     if(isNaN(bmi)){
+//         console.log("error in taking value ");
+//     return false ;
+//     }
+//     //underweight / lightweight
+//     if (bmi < 18.5){
+//         description = "Underweight";
+//         document.getElementById("msgdesc").innerHTML = "Under Weight"; 
+//     }
+//     //normal weight 
+//     else if (18.5 >= bmi && bmi < 25){
+//         description = "Normal weight";
+//         document.getElementById("msgdesc").innerHTML = "Normal Weight"; 
+//     }
+//     //overweight
+//     else if (25 >= bmi && bmi < 30){
+//         description = "Overweight";
+//         document.getElementById("msgdesc").innerHTML = "Over Weight"; 
+//     }
+//     //obese
+//     else{
+//         description = "Obese";
+//     }
+//     var res = "Your BMI : "+ bmi.toFixed(3) +"<br>"+ description ; 
+//     document.getElementById("msgdesc").innerHTML = "Obese"; 
+//     console.log(res);
+//     return true ; 
+
+// }
 
 function gotoProgressTracker(){
 
@@ -77,6 +108,7 @@ function gotoProgressTracker(){
 function openform(){
     document.getElementById("main").style.filter = "blur("+5+"px)";
     document.getElementById("message").style.filter = "blur("+5+"px)";
+
     document.getElementById("fitnessformdiv").style.display = 'block' ;
    
     document.getElementById("fitnessformdiv").style.filter = 'none';
@@ -85,8 +117,11 @@ function openform(){
 }
 
 function workoutVideos(){
-    if (BMI < 18.5){
+    
 
+
+    if (BMI < 18.5){
+        document.getElementById("msgdesc").innerHTML="Light weight";
         console.log(BMI + " lightweight workout videos opened ");
 
         document.getElementById("lightWeight").style.display = 'block';
@@ -101,7 +136,8 @@ function workoutVideos(){
        
     }
     //normal weight 
-    else if (18.5 >= BMI && BMI < 25){
+    else if (BMI>=18.5  && BMI < 25){
+        document.getElementById("msgdesc").innerHTML="Normal weight";
 
         console.log(BMI + "normal workout videos opened ");
 
@@ -116,7 +152,8 @@ function workoutVideos(){
         document.getElementById("lightweightdiet").style.display = 'none';
     }
     //overweight
-    else if (25 >= BMI && BMI < 30){
+    else if (BMI>=25 && BMI < 30){
+        document.getElementById("msgdesc").innerHTML="Over-weight";
 
         console.log(BMI + "overweight workout videos opened ");
 
@@ -132,6 +169,7 @@ function workoutVideos(){
     }
     //obese
     else{
+        document.getElementById("msgdesc").innerHTML="Obese";
 
         console.log(BMI + "obese workout videos opened ");
 
@@ -150,6 +188,7 @@ function workoutVideos(){
 function Diet(){
 
     if (BMI < 18.5){
+        document.getElementById("msgdesc").innerHTML="Light weight";
 
         console.log(BMI + "lightweight diet videos opened ");
 
@@ -165,7 +204,8 @@ function Diet(){
        
     }
     //normal weight 
-    else if (18.5 >= BMI && BMI < 25){
+    else if (BMI>=18.5  && BMI < 25){
+        document.getElementById("msgdesc").innerHTML="Normal weight";
 
         console.log(BMI + "normal diet videos opened ");
 
@@ -180,7 +220,8 @@ function Diet(){
         document.getElementById("lightweightdiet").style.display = 'none';
     }
     //overweight
-    else if (25 >= BMI && BMI < 30){
+    else if (BMI>=25 && BMI < 30){
+        document.getElementById("msgdesc").innerHTML="Over-weight";
 
         console.log(BMI + "overweight diet videos opened ");
 
@@ -196,6 +237,7 @@ function Diet(){
     }
     //obese
     else{
+        document.getElementById("msgdesc").innerHTML="Obese";
 
         console.log(BMI + "obese diet videos opened ");
 

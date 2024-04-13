@@ -16,18 +16,38 @@
         />
         <h3 id="siteName">LifeTrackR</h3>
       </div>
+      <input type="button" class="login_button" onclick="window.location.href = '../login page/login page.php'" name="logout" value="Logout">
       <div class="headerButton">
         <button onclick="window.location.href = '../About USS/aboutus.html'">
           About
         </button>
-        <button onclick="window.location.href = '../Contact/contactindex.html' " >Contact</button>
-        <button onclick="window.location.href = '../services/serviceIndex.html'">Services</button>
+        <button
+          onclick="window.location.href = '../Contact/contactindex.html' "
+        >
+          Contact
+        </button>
+        <button
+          onclick="window.location.href = '../services/serviceIndex.html'"
+        >
+          Services
+        </button>
       </div>
     </header>
 
     <div class="Homecontainer">
-      <h2 id="himsg">Hi USER !</h2>
-      <button class="Fitness" onclick="">
+      <h2 id="himsg">
+        
+      <?php
+
+      include("../config.php");
+      echo "HI  ". $username ; 
+
+      ?>
+      </h2>
+      <button
+        class="Fitness"
+        onclick="window.location.href = '../Fitness/fitmain.php'"
+      >
         <h3>Fitness</h3>
         <img
           src="fitnessImg.png"
@@ -39,7 +59,7 @@
       </button>
       <button
         class="EMS"
-        onclick="window.location.href = '../EventManager/index.html'"
+        onclick="window.location.href = '../EventManager/em.php'"
       >
         <h3>Event Manager</h3>
         <img
@@ -50,13 +70,14 @@
         />
         <p class="textbelowimage">Where Imagination Meets Execution</p>
       </button>
-      <button class="Finance" onclick="">
+      <button class="Finance" onclick="window.location.href = '../Finance/finance.php'">
         <h3>Finance</h3>
         <img
           src="financeImg.png"
           alt="Img isn't responding"
           height="200px"
           widhth="200px"
+          
         />
         <p class="textbelowimage">Smart Strategies, Brighter Finances</p>
       </button>
@@ -73,7 +94,7 @@
         />
         <p class="textbelowimage">Seize the Moment</p>
       </button>
-      <a href="../ShopOnline/7.5 merchpage.html">
+      <a href="../ShopOnline/7.5 merchpage.php">
         <button class="Shop" onclick="">
           <h3>Shop</h3>
           <img
@@ -103,3 +124,21 @@
     </div>
   </body>
 </html>
+<?php
+if(isset($_POST['logout'])){
+
+// To stop the session and unset all session variables
+session_unset();
+
+// To completely destroy the session data
+session_destroy();
+
+
+exit();
+header("Location:../login page/login page.php.php");
+
+
+
+}
+
+?>
